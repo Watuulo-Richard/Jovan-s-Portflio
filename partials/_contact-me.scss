@@ -1,0 +1,132 @@
+.contact-section {
+    padding: 2rem 0rem;
+    .contact-container {
+        .contact-title {
+                & h2 {
+                    font-size: 2rem;
+                    color: var(--text-black-900);
+                    font-weight: 700;
+                    position: relative;
+                }
+        
+                & h2::before {
+                    content: '';
+                    height: 0.25rem;
+                    width: 3.125rem;
+                    font-size: 2rem;
+                    background-color: var(--skin-color);
+                    top: 100%;
+                    position: absolute;
+                }
+            
+                & h2::after {
+                    content: '';
+                    height: 0.25rem;
+                    width: 1.5625rem;
+                    font-size: 2rem;
+                    background-color: var(--skin-color);
+                    top: 100%;
+                    left: 0;
+                    position: absolute;
+                    margin-top: 0.5rem;
+                }
+            
+        }
+
+        .contact-subtitle {
+            padding: 2rem 0rem;
+            text-align: center;
+            font-size: 2rem;
+            color: var(--skin-color);
+        }
+
+        .contact-minor-title {
+            padding-bottom: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--text-black-900);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            gap: 2rem;
+            justify-items: center;
+
+            .contact-info-item {
+                text-align: center;
+                & i {
+                    padding: 1rem;
+                    border-radius: 3rem;
+                    background-color: var(--skin-color);
+                    font-size: 3.5rem;
+                    box-shadow:  0 0 25px var(--skin-color);
+                    transition: .3s ease-in-out;
+                    
+                }
+                & i:hover {
+                    box-shadow: 0 0 25px var(--skin-color), 
+                                            0 0 50px var(--skin-color);
+                    color: white;
+                    transform: translateY(-10px);
+                }
+
+                & h4 {
+                    padding-top: 1rem;
+                }
+
+            }
+        }
+
+        .form-container {
+            
+            .form-content {
+                border: .2rem solid var(--text-black-900);
+                border-radius: .2rem;
+                padding: 1rem;
+                margin: 0 auto;
+                width: 30rem;
+                .form-control {
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    outline: none;
+                    font-size: 1rem;
+                    border: 1px solid var(--bg-black-50);
+                    margin-bottom: 1rem;
+                    color: var(--text-black-700);
+                    transition: all .3s ease-in-out;
+                }:focus {
+                    box-shadow: 0 0 25px rgba(48, 46, 77, 0.15);
+                }
+
+                .submitBtn {
+                    .submitButton {
+                        border: none;
+                        outline: none;
+                        background-color: var(--skin-color);
+                        padding: 1rem 3rem;
+                        border-radius: .5rem;
+                        width: 100%;
+                        font-size: 1rem;
+                        color: var(--bg-black-100);
+                        cursor: pointer;
+                        transition: all .3s ease-in-out;
+
+                        & i {
+                            padding: 0rem 1rem;
+                        }
+                    }:hover {
+                        box-shadow: 0 0 25px var(--skin-color), 
+                                            0 0 50px var(--skin-color);
+                        color: white;
+                        transform: translateY(-10px);
+                        & i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

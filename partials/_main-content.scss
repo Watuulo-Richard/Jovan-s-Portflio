@@ -1,0 +1,106 @@
+.main-content {
+    background-color: var(  --bg-black-50);
+    padding: 2rem;
+    .home-section {
+
+        .row-for-home-section {
+                display: flex;
+                justify-content: space-between;
+                gap: 1.25rem;
+            .home-info {
+                & h3 {
+                    .name {
+                        font-size: 2rem;
+                        font-family: "Clicker Script", cursive;
+                        font-weight: 700;
+                        color: var(--skin-color);
+                    }
+                }
+
+                & h2 {
+                    .my-profession{
+                        font-size: 2rem;
+                    }
+    
+                    .typing {
+                        color: var(--skin-color);
+                    }
+                }
+
+                & p {
+                    padding-bottom: 2rem;
+                    font-size: 1rem;
+                    color: var(--text-black-700);
+                }
+
+                .btn {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    border: none;
+                    background: var(--skin-color);
+                    color: var(--bg-black-100);
+                    transition: all 0.3s ease;
+                }
+                
+            }
+            .home-img {
+                width: 60%;
+                padding: 0rem 2rem;
+                position: relative;
+                
+                & img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: .3rem;
+                }
+            }
+
+            .home-img::after {
+                content: '';
+                width: 30%;
+                height: 20%;
+                position: absolute;
+                right: 0;
+                bottom: -10%;
+                border-bottom: 10px solid var(--skin-color);
+                border-right: 10px solid var(--skin-color);
+                & img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            .home-img::before {
+                content: '';
+                width: 30%;
+                height: 20%;
+                position: absolute;
+                left: 0;
+                top: -10%;
+                border-top: 10px solid var(--skin-color);
+                border-left: 10px solid var(--skin-color);
+                & img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+        /* Medium Devices (tablets) */
+    @media (max-width: 991px) {  
+        .home-info {
+            font-size: 1rem;
+        }
+        .home-img {
+            display: none;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,57 @@
+.section-title {
+    & h2 {
+        font-size: 2rem;
+        color: var(--text-black-900);
+        font-weight: 700;
+        position: relative;
+    }
+
+    & h2::before {
+        content: '';
+        height: 0.25rem;
+        width: 3.125rem;
+        font-size: 2rem;
+        background-color: var(--skin-color);
+        top: 100%;
+        position: absolute;
+    }
+
+    & h2::after {
+        content: '';
+        height: 0.25rem;
+        width: 1.5625rem;
+        font-size: 2rem;
+        background-color: var(--skin-color);
+        top: 100%;
+        left: 0;
+        position: absolute;
+        margin-top: 0.5rem;
+    }
+
+}
+
+.portfolio-heading {
+    color: var(--text-black-900);
+    font-weight: 500;
+    padding: 2rem 0rem;
+}
+
+.portfolio-item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+
+    .portfolio-item {
+        border: 3px solid var(--bg-black-900);
+        border-radius: .5rem;
+        cursor: pointer;
+        width: 100%;
+
+        & img {
+            height: 100%;
+            width: 100%;
+            border-radius: .5rem;
+        }
+        
+    }
+}
