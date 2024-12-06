@@ -5,7 +5,6 @@
     .home-section {
         .row-for-home-section {
                 display: flex;
-                // justify-content: space-between;
             .home-info {
                 width: 50%;
                 & h3 {
@@ -89,9 +88,60 @@
             }
 
         }
-        /* Medium Devices (phones) */
+        /* Medium Devices (Tablets) */
+        @media (max-width: 1024px) {  
+            .row-for-home-section {
+                flex-direction: column;
+               .home-info {
+                width: 100%;
+                order: 2;
+               }
+               .home-img {
+                width: 100%;
+                padding: 0rem;
+                order: 1;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 1rem;
+                }
+               }
+
+                .home-img::after {
+                    display: none;
+                    // content: '';
+                    // width: 30%;
+                    // height: 20%;
+                    // position: absolute;
+                    // right: 12%;
+                    // bottom: -5%;
+                    // border-bottom: 10px solid var(--skin-color);
+                    // border-right: 10px solid var(--skin-color);
+                    // & img {
+                    //     height: 100%;
+                    //     width: 100%;
+                    // }
+                }
+
+                .home-img::before {
+                    display: none;
+                    // content: '';
+                    // width: 30%;
+                    // height: 20%;
+                    // position: absolute;
+                    // left: 12%;
+                    // top: -5%;
+                    // border-top: 10px solid var(--skin-color);
+                    // border-left: 10px solid var(--skin-color);
+                    // & img {
+                    //     height: 100%;
+                    //     width: 100%;
+                    // }
+                }
+            }
+          }
+        /* Mobile Devices (phones) */
         @media (max-width: 495px) {  
-            
             .row-for-home-section {
                 flex-direction: column;
                .home-info {
@@ -144,7 +194,12 @@
         }
 
     }
-
+    /* Medium Devices (Tablets) */
+    @media (max-width: 1024px){
+        width: 100%;
+        padding: 1rem;
+    }
+    /* Mobile Devices (phones) */
     @media (max-width: 495px){
         width: 100%;
         padding: 1rem;
