@@ -1,5 +1,4 @@
 .contact-section {
-    padding: 2rem 0rem;
     .contact-container {
         .contact-title {
                 & h2 {
@@ -53,6 +52,7 @@
             gap: 2rem;
             justify-items: center;
 
+
             .contact-info-item {
                 text-align: center;
                 & i {
@@ -85,7 +85,8 @@
                 border-radius: .2rem;
                 padding: 1rem;
                 margin: 0 auto;
-                width: 30rem;
+                // width: 30rem;
+                width: 50%;
                 .form-control {
                     width: 100%;
                     padding: 1rem;
@@ -125,6 +126,16 @@
                             color: white;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 495px) {  
+        .contact-container {
+            .form-container {
+                .form-content {
+                    width: 100%;
                 }
             }
         }

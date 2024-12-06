@@ -100,11 +100,3 @@ moreBtns.forEach((moreBtn) => {
         }
     })
 })
-
-// .more {
-//     border: none;
-//     color: var(--skin-color);
-//     cursor: pointer;
-//     font-size: 1rem;
-//     background: none;
-// } 

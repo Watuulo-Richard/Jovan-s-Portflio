@@ -1,14 +1,16 @@
 nav {
-  min-height: 100vh;
+  width: 25%;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 6rem;
+  
   border-right: 0.0625rem solid var(--bg-black-50);
   .aside {
     .logo {
       position: absolute;
-      top: 20%;
+      top: 10%;
+      left: 7.5%;
       font-size: 1.875rem;
       text-transform: capitalize;
 
@@ -50,17 +52,18 @@ nav {
     }
 
     & ul {
+      padding: 23rem 0rem;
       list-style: none;
 
       & li {
-        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 0.0625rem solid var(--text-black-900);
 
         & a {
           font-size: 1rem;
           font-weight: 600;
           color: var(--text-black-900);
           // padding: 0.3125rem 0.9375rem;
-          border-bottom: 0.0625rem solid var(--text-black-900);
 
           & i {
             padding-right: 0.9375rem;
@@ -74,12 +77,7 @@ nav {
     }
   }
 
-  @media (max-width: 991px) {  
-    .nav {
-        .aside {
-            display: none;
-        }
-    
-    }
-}
+  @media (max-width: 495px) {  
+    display: none;
+  }
 }
