@@ -25,7 +25,6 @@ body .container {
 @media (max-width: 495px) {
   body .container {
     width: 100%;
-    background-color: black;
   }
 }
 
@@ -192,7 +191,7 @@ nav .aside ul li .active {
   height: 100%;
   width: 100%;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1290px) {
   .main-content .home-section .row-for-home-section {
     display: flex;
   }
@@ -880,4 +879,64 @@ nav .aside ul li .active {
   .contact-section .contact-container .form-container .form-content {
     width: 100%;
   }
+}
+
+.container-thanks {
+  background-color: #f5f5f4;
+  color: var(--text-black-900);
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-thanks .message-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  border-radius: 0.5rem;
+}
+.container-thanks .message-container .message-icon-container {
+  width: 20%;
+  margin: 0 auto;
+}
+.container-thanks .message-container .message-icon-container img {
+  height: 100%;
+  width: 100%;
+}
+.container-thanks .message-container .message-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-thanks .message-container .message-text-container h3 {
+  font-size: 2rem;
+  color: #66A2F5;
+}
+.container-thanks .message-container .message-text-container h3 i {
+  color: #66A2F5;
+}
+.container-thanks .message-container .message-text-container p {
+  font-size: 1rem;
+}
+.container-thanks .message-container .message-text-container .back {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 1rem;
+  background: linear-gradient(to right, #66A2F5, #ec1839);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  transition: all 0.3s ease-in;
+  color: #f5f5f4;
+}
+.container-thanks .message-container .message-text-container .back i {
+  padding: 0rem 0.5rem;
+}
+.container-thanks .message-container .message-text-container .back:hover {
+  background: #f5f5f4;
+  color: #ec1839;
+  border: #ec1839 solid 0.2rem;
 }/*# sourceMappingURL=styles.css.map */
