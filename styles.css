@@ -939,4 +939,13 @@ nav .aside ul li .active {
   background: #f5f5f4;
   color: #ec1839;
   border: #ec1839 solid 0.2rem;
+}
+@media (max-width: 1024px) {
+  .container-thanks .message-container {
+    width: 80%;
+    text-align: center;
+  }
+  .container-thanks .message-container .message-icon-container {
+    width: 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */

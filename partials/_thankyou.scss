@@ -13,7 +13,6 @@
         width: 50%;
         height: 50%;
         border-radius: .5rem;
-        // text-align: center;
         .message-icon-container {
             width: 20%;
             margin: 0 auto;
@@ -48,8 +47,6 @@
                 padding: 1rem 2rem;
                 border-radius: 2rem;
                 border: none;
-                // background: var(--skin-color);
-                // color: var(--bg-black-100);
                 transition: all .3s ease-in;
                 & i {
                     padding: 0rem .5rem;
@@ -61,6 +58,14 @@
                 color: #ec1839;
                 border: #ec1839 solid .2rem;
             }
+        }
+        @media (max-width: 1024px){
+            width: 80%;
+            text-align: center;
+            .message-icon-container {
+                width: 50%;
+            }
+            
         }
   
     }
