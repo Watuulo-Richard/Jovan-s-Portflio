@@ -100,27 +100,3 @@ moreBtns.forEach((moreBtn) => {
         }
     })
 })
-
-// function sendMsg(e) {
-//     e.preventDefault()
-    
-// const formElement = document.querySelector('.form-content')
-// const inputName = document.querySelector('.name-input')
-// const inputEmail = document.querySelector('.email-input')
-// const msgElement = document.querySelector('.msg')
-
-
-// formElement.addEventListener('submit', sendMsg);
-//     // function for sending an email...
-// Email.send({
-//     Host : "smtp.elasticemail.com",
-//     Username : "watuulorichard@gmail.com",
-//     Password : "05FEB1BA78A971C50667447AD5B6BCEE9089",
-//     To : 'watuulorichard@gmail.com',
-//     From : "email.value",
-//     Subject : "Contact Form",
-//     Body : msgElement.value
-// }).then(
-//   message => alert(message)
-// );
-// }
