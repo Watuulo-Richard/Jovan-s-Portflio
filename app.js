@@ -71,7 +71,7 @@ const arrayOfCards = servicesArray.forEach((service) => {
                 </div>
                 <h4>${service.subHeading}</h4>
                 <p class="line-clamp description">${service.text}</p>
-                <button  type="button" class="more">more
+                <button  type="button" class="more">More
                 </button>
             </div>
         </div>
@@ -90,11 +90,6 @@ moreBtns.forEach((moreBtn) => {
         // Change button text based on the state
         if (description.classList.contains("line-clamp")) {
             moreBtn.textContent = "More";
-            moreBtn.style.border = "none"
-            moreBtn.style.color = "var(--skin-color)";
-            moreBtn.style.cursor = "pointer";
-            // moreBtn.style.font-size = "1rem";
-            moreBtn.style.background = "none"
         } else {
             moreBtn.textContent = "Less";
         }

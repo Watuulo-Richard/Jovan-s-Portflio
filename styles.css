@@ -669,14 +669,14 @@ nav .aside ul li .active {
   text-align: center;
   transition: all 0.4s ease;
 }
-.services-section .services-items .service-item .icon {
+.services-section .services-items .service-item .service-item-inner .icon {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
   margin: 0 auto;
   transition: all 0.5s ease;
 }
-.services-section .services-items .service-item .icon i {
+.services-section .services-items .service-item .service-item-inner .icon i {
   font-size: 3rem;
   display: flex;
   justify-content: center;
@@ -685,16 +685,16 @@ nav .aside ul li .active {
   color: var(--skin-color);
   transition: all 0.5s ease;
 }
-.services-section .services-items .service-item .icon h4 {
+.services-section .services-items .service-item .service-item-inner .icon h4 {
   font-size: 1rem;
   color: var(--text-black-900);
   text-transform: capitalize;
 }
-.services-section .services-items .service-item .icon p {
+.services-section .services-items .service-item .service-item-inner .icon p {
   font-size: 1rem;
   color: var(--text-black-700);
 }
-.services-section .services-items .service-item .icon .more {
+.services-section .services-items .service-item .service-item-inner .more {
   border: none;
   color: var(--skin-color);
   cursor: pointer;
