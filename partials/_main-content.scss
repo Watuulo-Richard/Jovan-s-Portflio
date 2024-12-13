@@ -1,4 +1,5 @@
 .main-content {
+    margin-left: 25%;
     padding: 5rem 3rem;
     width: 75%;
     background-color: var(--bg-black-50);
@@ -8,6 +9,9 @@
             .home-info {
                 width: 50%;
                 & h3 {
+                    font-family: "Clicker Script", cursive;
+                    color: var(--skin-color);
+                    font-size: 3rem;
                     .name {
                         font-size: 2rem;
                         font-family: "Clicker Script", cursive;
@@ -32,7 +36,7 @@
                     color: var(--text-black-700);
                 }
 
-                .hire-me {
+                .more-info {
                     width: 100%;
                     font-size: 1rem;
                     font-weight: 500;
@@ -41,7 +45,13 @@
                     border: none;
                     background: var(--skin-color);
                     color: var(--bg-black-100);
-                    transition: all 0.3s ease;
+                    transition: all 0.3s ease-in-out;
+                    & i {
+                        padding: 0rem .5rem;
+                    }
+                }
+                .more-info:hover {
+                    transform: translateY(-5px);
                 }
                 
             }
@@ -180,7 +190,8 @@
         }
 
         /* Medium Devices (Tablets) */
-        @media (max-width: 1024px) {  
+        @media (max-width: 1024px) {
+            margin: 0;
             .row-for-home-section {
                 flex-direction: column;
                .home-info {
@@ -240,13 +251,24 @@
                 order: 2;
                }
                .home-img {
-                width: 100%;
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
                 padding: 0rem;
                 order: 1;
                 & img {
+                    box-shadow: 0 0 25px var(--skin-color);
+                    transition: all .4s ease-in-out;
                     width: 100%;
                     height: 100%;
+                    border-radius: 250px;
+                    display: block;
+                    object-fit: cover;
+                    &:hover {
+                        box-shadow: 0 0 25px var(--skin-color), 0 0 50px var(--skin-color), 0 0 100px var(--skin-color);
+                    }
                 }
+                
                }
 
                 .home-img::after {
@@ -287,11 +309,13 @@
     }
     /* Medium Devices (Tablets) */
     @media (max-width: 1024px){
+        margin: 0rem;
         width: 100%;
         padding: 1rem;
     }
     /* Mobile Devices (phones) */
     @media (max-width: 495px){
+        margin: 0rem;
         width: 100%;
         padding: 1rem;
     }

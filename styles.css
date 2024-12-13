@@ -21,6 +21,7 @@ body {
 }
 body .container {
   display: flex;
+  position: relative;
 }
 @media (max-width: 495px) {
   body .container {
@@ -34,12 +35,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
   border-right: 0.0625rem solid var(--bg-black-50);
 }
 nav .aside .logo {
   position: absolute;
   top: 10%;
-  left: 7.5%;
+  left: 30%;
   font-size: 1.875rem;
   text-transform: capitalize;
 }
@@ -106,6 +108,7 @@ nav .aside ul li .active {
 }
 
 .main-content {
+  margin-left: 25%;
   padding: 5rem 3rem;
   width: 75%;
   background-color: var(--bg-black-50);
@@ -122,6 +125,11 @@ nav .aside ul li .active {
 }
 .main-content .home-section .row-for-home-section .home-info {
   width: 50%;
+}
+.main-content .home-section .row-for-home-section .home-info h3 {
+  font-family: "Clicker Script", cursive;
+  color: var(--skin-color);
+  font-size: 3rem;
 }
 .main-content .home-section .row-for-home-section .home-info h3 .name {
   font-size: 2rem;
@@ -140,7 +148,7 @@ nav .aside ul li .active {
   font-size: 1rem;
   color: var(--text-black-700);
 }
-.main-content .home-section .row-for-home-section .home-info .hire-me {
+.main-content .home-section .row-for-home-section .home-info .more-info {
   width: 100%;
   font-size: 1rem;
   font-weight: 500;
@@ -149,7 +157,13 @@ nav .aside ul li .active {
   border: none;
   background: var(--skin-color);
   color: var(--bg-black-100);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
+}
+.main-content .home-section .row-for-home-section .home-info .more-info i {
+  padding: 0rem 0.5rem;
+}
+.main-content .home-section .row-for-home-section .home-info .more-info:hover {
+  transform: translateY(-5px);
 }
 .main-content .home-section .row-for-home-section .home-img {
   width: 50%;
@@ -268,6 +282,9 @@ nav .aside ul li .active {
   }
 }
 @media (max-width: 1024px) {
+  .main-content .home-section {
+    margin: 0;
+  }
   .main-content .home-section .row-for-home-section {
     flex-direction: column;
   }
@@ -301,13 +318,24 @@ nav .aside ul li .active {
     order: 2;
   }
   .main-content .home-section .row-for-home-section .home-img {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
     padding: 0rem;
     order: 1;
   }
   .main-content .home-section .row-for-home-section .home-img img {
+    box-shadow: 0 0 25px var(--skin-color);
+    transition: all 0.4s ease-in-out;
     width: 100%;
     height: 100%;
+    border-radius: 250px;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-content .home-section .row-for-home-section .home-img img:hover {
+    box-shadow: 0 0 25px var(--skin-color), 0 0 50px var(--skin-color), 0 0 100px var(--skin-color);
   }
   .main-content .home-section .row-for-home-section .home-img::after {
     display: none;
@@ -318,12 +346,14 @@ nav .aside ul li .active {
 }
 @media (max-width: 1024px) {
   .main-content {
+    margin: 0rem;
     width: 100%;
     padding: 1rem;
   }
 }
 @media (max-width: 495px) {
   .main-content {
+    margin: 0rem;
     width: 100%;
     padding: 1rem;
   }
@@ -437,7 +467,7 @@ nav .aside ul li .active {
   transform: translateY(-5px);
 }
 .about-section .download-Skills .Buttons .HireMeBtn:hover {
-  transform: translateY(-5px);
+  background-color: yellow;
 }
 .about-section .download-Skills .skills {
   width: 50%;

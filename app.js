@@ -1,8 +1,8 @@
 const descriptions = document.querySelectorAll(".description")
 const servicesContainer = document.querySelector(".services-items")
-
 const paragraphs = document.querySelectorAll(".service-item p")
 console.log(paragraphs)
+const downloadButtonElement = document.getElementById("download-resume")
 
 const servicesArray = [
     {
@@ -95,3 +95,48 @@ moreBtns.forEach((moreBtn) => {
         }
     })
 })
+
+downloadButtonElement.addEventListener("click", function(){
+    const fileUrl = './LubegaJovanResume.pdf';
+
+    const a = document.createElement('a')
+    a.href = fileUrl
+    a.download = 'LubegaJovanResume.pdf'
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+})
+
+function runTypingEffect() {
+    const text = 'Hello There....!!! My Name is Lubega Jovan.'
+    const typingElement = document.querySelector('.hello-text')
+    const typingDelay = 100
+    typeText(text, typingElement, typingDelay)
+}
+function typeText(text, typingElement, delay) {
+    let totalDuration = 0; 
+    console.log(totalDuration)
+    for(let i = 0; i < text.length; i++){
+        setTimeout(()=>{
+            typingElement.textContent += text.charAt(i)
+        }, totalDuration + delay * i)
+    }
+    totalDuration += delay * text.length;
+    
+    for (let i = text.length - 1; i >= 0; i--) {
+        setTimeout(() => {
+            typingElement.textContent = typingElement.textContent.slice(0, -1);
+        }, totalDuration + delay * (text.length - 1 - i));
+       
+    }
+    totalDuration += delay * text.length;
+
+    for(let i = 0; i < text.length; i++){
+        setTimeout(()=>{
+            typingElement.textContent += text.charAt(i)
+        }, totalDuration + delay * i)
+    }
+
+}
+
+document.addEventListener('DOMContentLoaded', runTypingEffect)
