@@ -110,7 +110,7 @@ downloadButtonElement.addEventListener("click", function(){
 function runTypingEffect() {
     const text = 'Hello There....!!! My Name is Lubega Jovan.'
     const typingElement = document.querySelector('.hello-text')
-    const typingDelay = 100
+    const typingDelay = 300
     typeText(text, typingElement, typingDelay)
 }
 function typeText(text, typingElement, delay) {

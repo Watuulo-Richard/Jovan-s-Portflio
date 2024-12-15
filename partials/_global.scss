@@ -16,6 +16,16 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--skin-color);
+    }
+    ::-webkit-scrollbar-track {
+        background: var(--text-black-700);
+    }
 }
 
 body {
@@ -28,6 +38,7 @@ body {
         @media (max-width: 495px) {  
             width: 100%;
         }
+        
     }
 }
 

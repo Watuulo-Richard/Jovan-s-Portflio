@@ -1,0 +1,191 @@
+.container-two {
+    min-height: 100vh;
+    background: var(--text-black-900);
+    color: var(--skin-color);
+    padding: 2rem;
+    .about-me {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .about-me-image {
+            width: 40%;
+            .about-me-image-container {
+                width: 50%;
+                height: auto;
+                margin-left: 50%;
+                border-radius: 1rem;
+                box-shadow: 0 0 25px var(--skin-color);
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+    
+                }
+            }
+        }
+        .about-me-text {
+            width: 60%;
+            .text-only {
+                & h2 {
+                   font-size: 2.5rem;
+                   & i {
+                    color: var(--skin-color);
+                   }
+                }
+                & h3 {
+                   font-size: 1.5rem; 
+                }
+                & p {
+                   color: #f3f4f6; 
+                }
+            }
+            .text-buttons {
+                padding: 1rem 0rem;
+                .link-up-btn {
+                    border: none;
+                    color: var(--skin-color);
+                    padding: .5rem 2rem;
+                    border-radius: 2rem;
+                    font-size: 1rem;
+                    background: transparent;
+                    border: var(--skin-color) solid .1rem;
+                    transition: all .3s ease-in-out;
+                    &:hover {
+                        border: var(--bg-black-900) solid .1rem;
+                        color: var(--bg-black-900);
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1024px){
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            .about-me-image {
+                width: 100%;
+                .about-me-image-container {
+                    width: 50%;
+                    height: auto;
+                    margin: 0 auto;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 25px var(--skin-color);
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+        
+                    }
+                }
+            }
+            .about-me-text {
+                width: 100%;
+                .text-only {
+                    text-align: center;
+                    & h2 {
+                       font-size: 2.5rem;
+                       & i {
+                        color: var(--skin-color);
+                       }
+                    }
+                    & h3 {
+                       font-size: 1.5rem; 
+                    }
+                    & p {
+                       color: #f3f4f6; 
+                    }
+                }
+                .text-buttons {
+                    padding: 1rem 0rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    .link-up-btn {
+                        border: none;
+                        color: var(--skin-color);
+                        padding: .5rem 2rem;
+                        border-radius: 2rem;
+                        font-size: 1rem;
+                        background: transparent;
+                        border: var(--skin-color) solid .1rem;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            border: var(--bg-black-900) solid .1rem;
+                            color: var(--bg-black-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 465px){
+        .about-me {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            .about-me-image {
+                width: 100%;
+                padding-bottom: 1rem;
+                border-bottom: var(--skin-color) solid .01rem;
+                .about-me-image-container {
+                    width: 60%;
+                    height: auto;
+                    margin: 0 auto;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 25px var(--skin-color);
+                    order: 1;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+        
+                    }
+                }
+            }
+            .about-me-text {
+                width: 100%;
+                order: 2;
+                .text-only {
+                    text-align: center;
+                    & h2 {
+                       font-size: 2.5rem;
+                       & i {
+                        color: var(--skin-color);
+                       }
+                    }
+                    & h3 {
+                       font-size: 1.5rem; 
+                    }
+                    & p {
+                       color: #f3f4f6; 
+                    }
+                }
+                .text-buttons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    padding: 1rem 0rem;
+                    .link-up-btn {
+                        border: none;
+                        color: var(--skin-color);
+                        padding: .5rem 2rem;
+                        border-radius: 2rem;
+                        font-size: 1rem;
+                        background: transparent;
+                        border: var(--skin-color) solid .1rem;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            border: var(--bg-black-900) solid .1rem;
+                            color: var(--bg-black-900);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

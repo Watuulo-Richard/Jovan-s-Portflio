@@ -38,6 +38,7 @@
 
                 .more-info {
                     width: 100%;
+                    margin: 0 auto;
                     font-size: 1rem;
                     font-weight: 500;
                     padding: 1rem 2rem;
@@ -243,12 +244,27 @@
             }
           }
         /* Mobile Devices (phones) */
-        @media (max-width: 495px) {  
+        @media (max-width: 495px) {
             .row-for-home-section {
                 flex-direction: column;
                .home-info {
                 width: 100%;
                 order: 2;
+                .more-info {
+                    width: 100%;
+                    margin: 0 auto;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+                    border: none;
+                    background: var(--skin-color);
+                    color: var(--bg-black-100);
+                    transition: all 0.3s ease-in-out;
+                    & i {
+                        padding: 0rem .5rem;
+                    }
+                }
                }
                .home-img {
                 width: 300px;
@@ -317,7 +333,7 @@
     @media (max-width: 495px){
         margin: 0rem;
         width: 100%;
-        padding: 1rem;
+        
     }
 
 }
