@@ -1,0 +1,87 @@
+.testimonials {
+    .testimonial-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem;
+        & h2 {
+            font-size: 2.5rem;
+        }
+    }
+    .swiper {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        max-width: 1200px;
+        margin: 0rem auto;
+        background-color: var( --text-black-700);
+        position: relative;
+        border-radius: .5rem;
+        .swiper-wrapper{
+            padding: 3rem 0rem;
+            .swiper-slide {
+                text-align: center;
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .testimonial-image-container {
+                    height: 170px;
+                    width: 170px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .testimonial-text {
+                    color: var(--bg-black-900);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 1rem 5rem;
+                    text-align: center;
+                    .testimony {
+                        color: var(--bg-black-100);
+                        font-weight: bold;
+                    }
+                    .quote-icon {
+                        padding: 1rem 0rem;
+                        font-size: 2rem;
+                        color: var(--skin-color);
+                    }
+                    .personal-details {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        .personal-name {
+                            color: var(--bg-black-100);
+                            font-weight: 600;
+                        }
+                        .personal-Job-Title {
+                            color: var(--bg-black-100);
+                            font-weight: 300;
+                        }
+                        .company {
+                            color: var(--bg-black-100);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            color: var(--skin-color);
+        }
+        .swiper-button-prev {
+            color: var(--skin-color);
+        }
+        .swiper-pagination {
+            color: var(--skin-color);
+        }
+    }
+}

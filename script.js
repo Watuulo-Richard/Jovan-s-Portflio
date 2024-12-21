@@ -1,28 +1,14 @@
-const cardItem = document.querySelectorAll('.card-item')
 
-let counter = 0
-
-function left() {
-    if(counter == 0){
-        counter = cardItem.length / 4 - 1
-    }else {
-        counter--
-        scroll()
-    }
-    
-}
-
-function right() {
-    if(counter == 0){
-        counter = cardItem.length
-    }else {
-        counter++
-        scroll()
-    }
-}
-
-function scroll() {
-    cardItem.forEach((card)=>{
-        card.style.transform = `translateX(${counter * 1250}px)`
-    })
-}
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });

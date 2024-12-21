@@ -6,11 +6,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>About Me</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 <body>
     <div class="container-two">
         <section class="about-me">
             <div class="about-me-image">
+                <div class="social-links">
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-snapchat"></i>
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
                 <div class="about-me-image-container">
                     <img src="./images/no-bg.png" alt="">
                 </div>
@@ -33,96 +63,135 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="slider-wrapper">
-            <div class="card-list">
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person-0.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person_1.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person_2.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person_3.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person_4.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person-0.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person-0.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-image-container">
-                        <img src="./images/person-0.jpg" alt="User Image" class="user-image">
-                    </div>
-                    <div class="card-text">
-                        <h2 class="user-name">James Will</h2>
-                        <p class="user-profession">Software Developer</p>
-                        <button type="button" class="message-button">Message</button>
-                    </div>
-                </div>
-                <div class="arrow">
-                    <button class="left" onclick="left()"><</button>
-                    <button class="right" onclick="right()">></button>
-                </div>
+        <!-- Swiper -->
+         <section id="testimonials" class="testimonials">
+            <div class="testimonial-heading">
+                <h2>Testimonials</h2>
             </div>
-            
-        </section> -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-image-container">
+                            <img src="./images/person-0.jpg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores eveniet aut in tempora, dolor voluptatibus minus praesentium, quia aliquam rem quam itaque eaque. Corporis minima ducimus maiores, accusantium est aliquam veniam vel, delectus velit doloribus numquam praesentium natus totam.
+                            </p>
+                            <p class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </p>
+                            <div class="personal-details">
+                                <p class="personal-name">Nakazibwe Christine</p>
+                                <p class="personal-Job-Title">Principle Statistics</p>
+                                <p class="company">
+                                    Ministry Of Education & Sports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-image-container">
+                            <img src="./images/person_1.jpg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores eveniet aut in tempora, dolor voluptatibus minus praesentium, quia aliquam rem quam itaque eaque. Corporis minima ducimus maiores, accusantium est aliquam veniam vel, delectus velit doloribus numquam praesentium natus totam.
+                            </p>
+                            <p class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </p>
+                            <div class="personal-details">
+                                <p class="personal-name">Nakazibwe Christine</p>
+                                <p class="personal-Job-Title">Principle Statistics</p>
+                                <p class="company">
+                                    Ministry Of Education & Sports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-image-container">
+                            <img src="./images/person_2.jpg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores eveniet aut in tempora, dolor voluptatibus minus praesentium, quia aliquam rem quam itaque eaque. Corporis minima ducimus maiores, accusantium est aliquam veniam vel, delectus velit doloribus numquam praesentium natus totam.
+                            </p>
+                            <p class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </p>
+                            <div class="personal-details">
+                                <p class="personal-name">Nakazibwe Christine</p>
+                                <p class="personal-Job-Title">Principle Statistics</p>
+                                <p class="company">
+                                    Ministry Of Education & Sports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-image-container">
+                            <img src="./images/person_3.jpg" alt="">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores eveniet aut in tempora, dolor voluptatibus minus praesentium, quia aliquam rem quam itaque eaque. Corporis minima ducimus maiores, accusantium est aliquam veniam vel, delectus velit doloribus numquam praesentium natus totam.
+                            </p>
+                            <p class="quote-icon">
+                                <i class="fa-solid fa-quote-left"></i>
+                            </p>
+                            <div class="personal-details">
+                                <p class="personal-name">Nakazibwe Christine</p>
+                                <p class="personal-Job-Title">Principle Statistics</p>
+                                <p class="company">
+                                    Ministry Of Education & Sports
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+         </section>
+         <!-- References -->
+         <section id="references">
+            <div class="reference-container">
+              <h2>References</h2>
+              <p>Feel free to reach out to the following individuals who can speak about my work and achievements:</p>
+              <div class="reference-card">
+                <h3>Dr. Sarah Nambasa</h3>
+                <p><strong>Title:</strong> Head of Statistics Department</p>
+                <p><strong>Organization:</strong> Ministry of Education and Sports</p>
+                <p><strong>Email:</strong> sarah.nambasa@education.go.ug</p>
+                <p><strong>Phone:</strong> +256 700 123 456</p>
+              </div>
+              <div class="reference-card">
+                <h3>Eng. David Kabunga</h3>
+                <p><strong>Title:</strong> Technical Advisor</p>
+                <p><strong>Organization:</strong> Uganda Bureau of Statistics (UBOS)</p>
+                <p><strong>Email:</strong> david.kabunga@ubos.go.ug</p>
+                <p><strong>Phone:</strong> +256 701 654 321</p>
+              </div>
+              <div class="reference-card">
+                <div class="reference-card-image">
+                    <img src="./images/person-0.jpg" alt="">
+                </div>
+                <div class="reference-card-text">
+                    <h3>Ms. Christine Amanya</h3>
+                    <p><strong>Title:</strong> Project Coordinator</p>
+                    <p><strong>Organization:</strong> Education Improvement Initiative</p>
+                    <p><strong>Email:</strong> christine.amanya@edinitiative.org</p>
+                    <p><strong>Phone:</strong> +256 712 987 654</p>
+                </div>
+              </div>
+            </div>
+          </section>
     </div>
-    <!-- <script src="./script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
