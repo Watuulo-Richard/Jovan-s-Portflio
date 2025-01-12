@@ -1,0 +1,52 @@
+#likes {
+    max-width: 1200px;
+    margin: 0rem auto;
+    .likes-container {
+        .likes-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0rem;
+            & h2 {
+                font-size: 2.5rem;
+            }
+
+            & p {
+                font-size: 1rem;
+            }
+        }
+        .likes-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            .like-item {
+                width: 100%;
+                border: var(--skin-color) solid 1px;
+                border-radius: .5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                text-align: center;
+                padding: 1rem;
+               .like-icon-container {
+                width: 60px;
+                height: 60px;
+                border: var(--skin-color) solid .01rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & i {
+                   font-size: 2rem; 
+                }
+               }
+               .like-text {
+
+               } 
+            }
+        }
+    }
+}

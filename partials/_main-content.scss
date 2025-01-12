@@ -1,7 +1,9 @@
 .main-content {
-    margin-left: 25%;
-    padding: 5rem 3rem;
     width: 75%;
+    padding: 2rem;
+    flex: 1;
+    padding-left: 7%;
+    transition: all .4s ease;
     background-color: var(--bg-black-50);
     .home-section {
         .row-for-home-section {
@@ -333,7 +335,20 @@
     @media (max-width: 495px){
         margin: 0rem;
         width: 100%;
-        
+        padding: 1rem;
     }
+}
 
+.max-padding-width {
+    padding-left: 27%;
+    @media (max-width: 1024px){
+        margin: 0rem;
+        width: 100%;
+        padding: 1rem;
+    }
+    @media (max-width: 495px){
+        margin: 0rem;
+        width: 100%;
+        padding: 1rem;
+    }
 }

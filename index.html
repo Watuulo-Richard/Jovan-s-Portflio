@@ -8,29 +8,53 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Lubega Jovan</title>
     <!-- Favicon Styling -->
-     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32'><rect width='64' height='32'/><text x='50%' y='50%' font-size='20' fill='red' font-family='Poppins, sans-serif' font-weight='bold' text-anchor='middle' dominant-baseline='middle'>J</text></svg>" type="image/svg+xml"> -->
-    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32'><rect width='64' height='32' fill='%23007bff'/><text x='50%' y='50%' font-size='20' fill='white' font-family='Poppins, sans-serif' text-anchor='middle' dominant-baseline='middle' style='padding:2rem;'>J</text></svg>" type="image/svg+xml"> -->
-    <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23007bff'/><text x='50%' y='50%' font-size='14' fill='white' font-family='Arial, sans-serif' text-anchor='middle' dominant-baseline='middle'>J</text></svg>" type="image/svg+xml"> -->
-    <!-- <link rel="shortcut icon" href="./images/jovan.svg" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
-        <nav>
-            <div class="aside">
-                <div class="logo">
-                    <a href="./index.html"><span>J</span>ovan</a>
+        <nav class="navigation-section ">
+            <div class="navigation-header">
+                <!-- Navigation-Header -->
+                <a href="./index.html" class="header-logo">
+                    <img src="./images/person-0.jpg" alt="">
+                </a>
+                <button type="button" class="toggler sidebar-toggler">
+                    <i class="fa-solid fa-less-than"></i>
+                </button>
+            </div>
+            <hr class="border-design">
+            <!-- Navigation-Links -->
+            <div class="nav-links">
+                <div class="nav-link">
+                    <a href="#home-section">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="nav-label">Home</span>
+                    </a>
                 </div>
-                <!-- <div class="nav-toggler">
-                    <span></span>
-                </div> -->
-                <ul class="nav-list">
-                    <li><a href="#home-section" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
-                    <li><a href="#about-section"><i class="fa-solid fa-user"></i>About</a></li>
-                    <li><a href="#services-section"><i class="fa-solid fa-list"></i>Services</a></li>
-                    <li><a href="#portfolio-section"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
-                    <li><a href="#contact-section"><i class="fa-solid fa-comment"></i>Contact</a></li>
-                </ul>
+                <div class="nav-link">
+                    <a href="#about-section">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span class="nav-label">About Me</span>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a href="#services-section">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span class="nav-label">Services</span>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a href="#portfolio-section">
+                        <i class="fa-solid fa-folder"></i>
+                        <span class="nav-label">Projects</span>
+                    </a>
+                </div>
+                <div class="nav-link">
+                    <a href="#contact-section">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span class="nav-label">Contact Me</span>
+                    </a>
+                </div>
             </div>
         </nav>
         <nav class="mini-nav">
@@ -55,23 +79,21 @@
                 <p>Contact</p>
             </a>
         </nav>
-        <div class="main-content">
-        <!-- Home-Section -->
-            
+        <div class="main-content max-padding-width">
+            <!-- Home-Section -->
             <section id="home-section" class="home-section">
                 <div class="row-for-home-section">
                     <div class="home-info">
                         <h3 class="hello-text"><span class="name"></span></h3>
                         <h2 class="my-profession">I'm a <span class="typing">Senior Statistician At The Ministry Of Education & Sports</span></h2>
                         <p>I am Lubega Jovan, a Senior Statistician at the Ministry of Education and Sports in Uganda, with over 10 years of experience in the field of statistics and data analysis. Throughout my career, I have been fortunate to contribute to the development and management of critical educational data, which plays a significant role in shaping the policies and strategies that guide the education sector in Uganda...</p>
-                        <a href="./about.html" class="btn more-info">Get More Info On<i class="fa-brands fa-x-twitter fa-beat-fade"></i></a>
+                        <a href="./about.html" class="btn more-info">Get More Info About Me...</a>
                     </div>
                     <div class="home-img">
                         <img src="./images/portrait-female-interior-designer-home.jpg" alt="">
                     </div>
                 </div>
             </section>
-
             <!-- About-Section -->
             <section id="about-section" class="about-section">
                 <div class="section-title">
@@ -125,7 +147,7 @@
                 <div class="download-Skills">
                     <div class="Buttons">
                         <button type="button" id="download-resume" class="dtn downloadBtn"><i class="fa-solid fa-file-arrow-down"></i> Download CV (Resume)</button>
-                        <a href="#" id="HireMeBtn" class="dtn">Hire Me</a>
+                        <a href="#contact-section" id="HireMeBtn" class="dtn">Hire Me</a>
                     </div>
                     <div class="skills">
                         <div class="skill-item">
@@ -200,7 +222,7 @@
                                     </h3>
                                     <h4 class="timeline-title">Uganda Advanced Certificate of Education (U.A.C.E) From Uganda Martyrs Secondary School, Namugongo
                                         </h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <p class="timeline-title">I completed my A-Level education at Uganda Martyrs Secondary School, Namugongo, earning the Uganda Advanced Certificate of Education (U.A.C.E).</p>
                                 </div>
 
                                 <div class="timeline-item">
@@ -210,7 +232,7 @@
                                     </h3>
                                     <h4 class="timeline-title">Uganda Certificate of Education (U.C.E) Uganda Martyrs Secondary School, Namugongo
                                     </h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <p class="timeline-title">I earned the Uganda Certificate of Education (U.C.E) at Uganda Martyrs Secondary School, Namugongo.</p>
                                 </div>
 
                                 <div class="timeline-item">
@@ -220,7 +242,7 @@
                                     </h3>
                                     <h4 class="timeline-title">Primary Leaving Examination (P.L.E) St. Anthony Nursery and Primary School,Kajjansi.
                                     </h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <p class="timeline-title">I completed my Primary Leaving Examination (P.L.E) at St. Anthony Nursery and Primary School, Kajjansi.</p>
                                 </div>
                             </div>
                         </div>
@@ -232,52 +254,65 @@
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="timeline-Experiencedate">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2015
+                                        <i class="fa-solid fa-calendar-days"></i> 2023 - Up-To-Date
                                     </h3>
-                                    <h4 class="experience-title">Masters In Computer Science</h4>
-                                    <p class="experience-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <h4 class="experience-title">Ministry Of Education & Sports</h4>
+                                    <div class="occupation">
+                                        <h5>Occupation:</h5>
+                                        <p class="timeline-title"> Statistician</p>
+                                    </div>
                                 </div>
 
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2015
+                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2023
                                     </h3>
-                                    <h4 class="experience-title">Masters In Computer Science</h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <h4 class="experience-title">Ministry of Agriculture Animal Industry And Fisheries.</h4>
+                                    <div class="occupation">
+                                        <h5>Occupation:</h5>
+                                        <p class="timeline-title"> Statistician</p>
+                                    </div>
                                 </div>
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2015
+                                        <i class="fa-solid fa-calendar-days"></i> 2010 - 2011
                                     </h3>
-                                    <h4 class="experience-title">Masters In Computer Science</h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <h4 class="experience-title">Sanyu Babies Home</h4>
+                                    <div class="occupation">
+                                        <h5>Occupation:</h5>
+                                        <p class="timeline-title">Volunteer</p>
+                                    </div>
+                                </div>
+                                <div class="experience-item">
+                                    <div class="circle-dot"></div>
+                                    <h3 class="experience-date">
+                                        <i class="fa-solid fa-calendar-days"></i> 2009 - 2010
+                                    </h3>
+                                    <h4 class="experience-title">Rakai District Local Government In The Planning Department</h4>
+                                    <div class="occupation">
+                                        <h5>Occupation:</h5>
+                                        <p class="timeline-title">Internship</p>
+                                    </div>
                                 </div>
 
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2015
+                                        <i class="fa-solid fa-calendar-days"></i> 2008 - 2009
                                     </h3>
-                                    <h4 class="experience-title">Masters In Computer Science</h4>
-                                    <p class="timeline-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
-                                </div>
-
-                                <div class="experience-item">
-                                    <div class="circle-dot"></div>
-                                    <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2015
-                                    </h3>
-                                    <h4 class="experience-title">Masters In Computer Science</h4>
-                                    <p class="experience-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, beatae corrupti fugit quae nobis, accusantium illum tempora nemo quos voluptatem unde quibusdam quas mollitia architecto?</p>
+                                    <h4 class="experience-title">Infrastructural Design Forum(Id Forum)</h4>
+                                    <div class="occupation">
+                                        <h5>Occupation:</h5>
+                                        <p class="timeline-title">Research Trainee</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div> 
             </section>
-
             <!-- Services-Section -->
             <section id="services-section" class="services-section">
                 <div class="section-title">
@@ -373,7 +408,6 @@
                     </div> -->
                 </div>
             </section>
-
              <!-- Portfolio-Section -->
             <section id="portfolio-section" class="portfolio-section">
                 <div class="section-title">
@@ -384,32 +418,32 @@
                 </div>
                 <div class="portfolio-item-container">
                     <div class="portfolio-item">
-                        <a href="">
-                            <img src="./images/top-view-letters-notebook-with-globe-lightbulb.jpg" alt="">
+                        <a href="https://emis.go.ug/" target="_blank">
+                            <img src="./images/emis-project.png" alt="">
                         </a>
                     </div>
 
                     <div class="portfolio-item">
-                        <a href="">
+                        <a href="https://joyoflearningug.com/sanyu-babies-home/" target="_blank">
                             <img src="./images/group-african-kids-classroom.jpg" alt="">
                         </a>
                     </div>
 
                     <div class="portfolio-item">
-                        <a href="">
-                            <img src="./images/teacher-helping-kids-class.jpg" alt="">
+                        <a href="https://www.agriculture.go.ug/" target="_blank">
+                            <img src="./images/ministry.jpeg" alt="">
                         </a>
                     </div>
 
                     <div class="portfolio-item">
-                        <a href="">
-                            <img src="./images/full-shot-kids-playing-football-outdoors.jpg" alt="">
+                        <a href="https://rakai.go.ug/dept/finance-and-planning" target="_blank">
+                            <img src="./images/Rakai.png" alt="">
                         </a>
                     </div>
 
                     <div class="portfolio-item">
-                        <a href="">
-                            <img src="./images/low-angle-senior-black-woman-posing.jpg" alt="">
+                        <a href="https://infrastructuredesignforum.com/">
+                            <img src="./images/nwsc.jpg" alt="">
                         </a>
                     </div>
 
@@ -420,7 +454,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- Contact-Section -->
             <section id="contact-section" class="contact-section">
                 <div class="contact-container">

@@ -4,14 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <title>About Me</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 </head>
 <body>
     <div class="container-two">
+        <nav class="about-me-nav">
+            <div class="logo">
+                <a href="./index.html"><span>J</span>ovan</a>
+            </div>
+            <div class="nav-links">
+                <a href="./about.html" class="nav-link">
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-address-card"></i>
+                    <p>About Me</p>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p>Services</p>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-folder"></i>
+                    <p>Projects</p>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fa-solid fa-address-book"></i>
+                    <p>Contact Me</p>
+                </a>
+                <a href="#" class="nav-link">
+                    <i class="fas fa-heart"></i>
+                    <p>Hobbies</p>
+                </a>
+            </div>
+            <button id="hamburgBtn" class="hamburg-menu" type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
         <section class="about-me">
             <div class="about-me-image">
                 <div class="social-links">
@@ -63,8 +97,7 @@
                 </div>
             </div>
         </section>
-        <!-- Swiper -->
-         <section id="testimonials" class="testimonials">
+        <section id="testimonials" class="testimonials">
             <div class="testimonial-heading">
                 <h2>Testimonials</h2>
             </div>
@@ -155,40 +188,126 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
-         </section>
-         <!-- References -->
-         <section id="references">
+        </section>
+        <!-- References -->
+        <section id="references">
             <div class="reference-container">
-              <h2>References</h2>
-              <p>Feel free to reach out to the following individuals who can speak about my work and achievements:</p>
-              <div class="reference-card">
-                <h3>Dr. Sarah Nambasa</h3>
-                <p><strong>Title:</strong> Head of Statistics Department</p>
-                <p><strong>Organization:</strong> Ministry of Education and Sports</p>
-                <p><strong>Email:</strong> sarah.nambasa@education.go.ug</p>
-                <p><strong>Phone:</strong> +256 700 123 456</p>
+              <div class="reference-heading">
+                <h2>References</h2>
+                <p>Feel free to reach out to the following individuals who can speak about my work and achievements:</p>
               </div>
-              <div class="reference-card">
-                <h3>Eng. David Kabunga</h3>
-                <p><strong>Title:</strong> Technical Advisor</p>
-                <p><strong>Organization:</strong> Uganda Bureau of Statistics (UBOS)</p>
-                <p><strong>Email:</strong> david.kabunga@ubos.go.ug</p>
-                <p><strong>Phone:</strong> +256 701 654 321</p>
-              </div>
-              <div class="reference-card">
-                <div class="reference-card-image">
-                    <img src="./images/person-0.jpg" alt="">
+              <div class="reference-grid-container">
+                <div class="reference-card-side">
+                    <div class="reference-card-side-image">
+                        <img src="./images/person_1.jpg" alt="">
+                    </div>
+                    <div class="reference-card-side-text">
+                        <h3>Eng. David Kabunga</h3>
+                        <h4><strong>Title:</strong></h4>
+                        <p>Technical Advisor</p>
+                        <h4><strong>Organization:</strong></h4>
+                        <p>Uganda Bureau of Statistics (UBOS)</p>
+                        <p><strong>Email:</strong> david.kabunga@ubos.go.ug</p>
+                        <p><strong>Phone:</strong> +256 701 654 321</p>
+                    </div>
                 </div>
-                <div class="reference-card-text">
-                    <h3>Ms. Christine Amanya</h3>
-                    <p><strong>Title:</strong> Project Coordinator</p>
-                    <p><strong>Organization:</strong> Education Improvement Initiative</p>
-                    <p><strong>Email:</strong> christine.amanya@edinitiative.org</p>
-                    <p><strong>Phone:</strong> +256 712 987 654</p>
+                <div class="reference-card">
+                    <div class="reference-image">
+                        <img src="./images/person-0.jpg" alt="">
+                    </div>
+                    <div class="reference-card-text">
+                        <h3>Dr. Sarah Nambasa</h3>
+                        <h4><strong>Title</strong></h4>
+                        <p>Head of Statistics Department</p>
+                        <h4><strong>Organization</strong></h4>
+                        <p>Ministry of Education and Sports</p>
+                        <p><strong>Email:</strong> sarah.nambasa@education.go.ug</p>
+                        <p><strong>Phone:</strong> +256 700 123 456</p>
+                    </div>
+                </div>
+                <div class="reference-card-side">
+                    <div class="reference-card-side-image">
+                        <img src="./images/person_1.jpg" alt="">
+                    </div>
+                    <div class="reference-card-side-text">
+                        <h3>Ms. Christine Amanya</h3>
+                        <h4><strong>Title:</strong></h4>
+                        <p>Project Coordinator</p>
+                        <h4><strong>Organization:</strong></h4>
+                        <p>Education Improvement Initiative</p>
+                        <p><strong>Email:</strong> christine.amanya@edinitiative.org</p>
+                        <p><strong>Phone:</strong> +256 712 987 654</p>
+                    </div>
                 </div>
               </div>
             </div>
-          </section>
+        </section>
+        <!-- Likes -->
+        <section id="likes">
+            <div class="likes-container">
+              <div class="likes-heading">
+                <h2>Things I Like</h2>
+                <p>These are some of my personal interests and hobbies that keep me inspired</p>
+              </div>
+              <div class="likes-list">
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="like-text">
+                        <h3>Reading</h3>
+                        <p>I enjoy reading, especially journals and materials on statistics, economic policies, and personal development.</p>
+                    </div>
+                </div>
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <div class="like-text">
+                        <h3>Travelling</h3>
+                        <p>I love exploring new places, which broadens my perspective and inspires me in my work.</p>
+                    </div>
+                </div>
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-volleyball"></i>
+                    </div>
+                    <div class="like-text">
+                        <h3>Sports</h3>
+                        <p>Participating in sports activities, such as volleyball, helps me stay active and focused.</p>
+                    </div>
+                </div>
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div class="like-text">
+                        <h3>Music</h3>
+                        <p>Listening to music is my go-to way to relax and refresh my mind.</p>
+                    </div>
+                </div>
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                  <div class="like-text">
+                    <h3>Going to the Gym</h3>
+                    <p>Fitness is a big part of my routine to maintain a healthy body and mind.</p>
+                  </div>
+                </div>
+                <div class="like-item">
+                    <div class="like-icon-container">
+                        <i class="fa-solid fa-swimmer"></i>
+                    </div>
+                  <div class="likes-text">
+                    <h3>Swimming</h3>
+                    <p>Swimming is one of my favorite activities to unwind and stay physically fit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+          
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./swiper-bundle.min.js"></script>

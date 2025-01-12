@@ -140,3 +140,78 @@ function typeText(text, typingElement, delay) {
 }
 
 document.addEventListener('DOMContentLoaded', runTypingEffect)
+
+
+// const mainNavContainer = document.querySelector('.nav-main')
+// const minNavContainer = document.querySelector('.nav-ico')
+// console.log(minNavContainer)
+// const cutOffButtonElement = document.getElementById('cutOffButton')
+// const mainContainer = document.querySelector('.main-content')
+// cutOffButtonElement.addEventListener('click', function(){
+//     const myToggle = minNavContainer.classList.toggle('showMainNav')
+//     console.log(myToggle, 'its working')
+
+//     const removeToggle = mainNavContainer.classList.toggle('showMinNav')
+//     console.log(removeToggle)
+//     const dynamicMargin = mainContainer.classList.toggle('dynamicMargin')
+//     console.log(dynamicMargin)
+
+//     const dynamicWidth = mainNavContainer.classList.toggle('dynamicWidth')
+//     console.log(dynamicWidth)
+    
+// })
+
+// const greaterThanButtonElement = document.querySelector('.greater-than-button')
+
+// greaterThanButtonElement.addEventListener('click', ()=>{
+//     const removeAddToggle = mainNavContainer.classList.toggle('showMinNav')
+//     console.log(removeAddToggle)
+//     const addToggle = minNavContainer.classList.toggle('showMainNav')
+//     console.log(addToggle)
+//     const dynamicMarginRestore = mainContainer.classList.toggle('dynamicMarginRestore')
+//     console.log(dynamicMarginRestore)
+//     const dynamicWidthRestore = minNavContainer.classList.toggle('dynamicWidthRestore')
+//     console.log(dynamicWidthRestore)
+// })
+// const mainContainer = document.querySelector('.main-content')
+// const mainNavigationBar = document.querySelector('.main-nav')
+// const sideButtonElement = document.getElementById('sideButton')
+// const hideMeClass = document.querySelector('.hideMe')
+// const LogoElement = document.querySelector('.logo')
+// const imageProfile = document.querySelector('.nav-profile-image-container')
+// sideButtonElement.addEventListener('click', function(){
+//     mainNavigationBar.classList.toggle('max-width')
+//     mainContainer.classList.toggle('max-padding')
+//     hideMeClass.classList.toggle('hide-text')
+//     LogoElement.classList.toggle('mylogo')
+//     imageProfile.classList.toggle('image-toggle')
+    
+// })
+const navigationBar = document.querySelector('.navigation-section')
+const sideBarTogglerButtonElement = document.querySelector('.sidebar-toggler')
+
+const mainContainer = document.querySelector('.main-content')
+sideBarTogglerButtonElement.addEventListener('click', ()=>{
+    navigationBar.classList.toggle('collapsed')
+    mainContainer.classList.toggle('max-padding-width')
+})
+
+function userScroll(){
+    const minNavContainer = document.querySelector('.mini-nav')
+    console.log(minNavContainer)
+    window.addEventListener('scroll', ()=>{
+        if (window.scrollY > 50) {
+            minNavContainer.classList.add('$main-color')
+            minNavContainer.classList.add('navbar-sticky')
+        }
+        else {
+            minNavContainer.classList.remove('$main-color')
+            minNavContainer.classList.remove('navbar-sticky')
+        }
+    })
+}
+
+document.addEventListener('DOMContentLoaded', userScroll)
+
+
+

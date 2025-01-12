@@ -1,10 +1,12 @@
 .container-two {
+    padding: 1rem 0rem;
     .about-me {
         display: flex;
         align-items: center;
         gap: 2rem;
-        max-width: 1400px;
-        margin: 0 auto;
+        // max-width: 1400px;
+        // margin: 0rem auto;
+        padding-top: 8rem;
         .about-me-image {
             width: 40%;
             display: flex;
@@ -54,6 +56,7 @@
         .about-me-text {
             width: 60%;
             .text-only {
+                // text-align: left;
                 & h2 {
                    font-size: 2.5rem;
                    & i {
@@ -87,13 +90,46 @@
         }
     }
     @media (max-width: 1024px){
+        padding: 0rem 1rem;
         .about-me {
             display: flex;
-            flex-direction: column;
+            flex-direction: column-reverse;
             align-items: center;
             gap: 2rem;
             .about-me-image {
                 width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                padding-bottom: 1rem;
+                border-bottom: var(--skin-color) solid .01rem;
+                .social-links {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    .social-link {
+                        background: var(--skin-color);
+                        box-shadow: 0 0 5px var(--bg-black-100);
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        transition: all .2s ease-in-out;
+                        & i {
+                            color: var(--bg-black-100);
+                            font-size: 1.5rem;
+                            &:hover {
+                                color: var(--skin-color);
+                            }
+                        }
+                        &:hover{
+                            background: transparent;
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
                 .about-me-image-container {
                     width: 50%;
                     height: auto;
@@ -151,15 +187,45 @@
         }
     }
     @media (max-width: 465px){
+        padding: 0rem 1rem;
         .about-me {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2rem;
             .about-me-image {
+                display: flex;
+                flex-direction: column-reverse;
                 width: 100%;
                 padding-bottom: 1rem;
                 border-bottom: var(--skin-color) solid .01rem;
+                .social-links {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+                    .social-link {
+                        background: var(--skin-color);
+                        box-shadow: 0 0 5px var(--bg-black-100);
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        transition: all .2s ease-in-out;
+                        & i {
+                            color: var(--bg-black-100);
+                            font-size: 1rem;
+                            &:hover {
+                                color: var(--skin-color);
+                            }
+                        }
+                        &:hover{
+                            background: transparent;
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
                 .about-me-image-container {
                     width: 60%;
                     height: auto;

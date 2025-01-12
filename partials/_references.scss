@@ -1,0 +1,93 @@
+#references {
+    max-width: 1200px;
+    margin: 0rem auto;
+    .reference-container {
+        .reference-heading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0rem;
+            & h2 {
+                font-size: 2.5rem;
+            }
+            & p {
+                font-size: 1rem;
+            }
+        }
+        .reference-grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            padding-bottom: 3rem;
+            .reference-card {
+                position: relative;
+                padding: 2rem;
+                border: var(--skin-color) solid .1rem;
+                width: 100%;
+                border-radius: .5rem;
+                transition: all .2s ease-in-out;
+                .reference-image {
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+                .reference-card-text {
+                    text-align: center;
+                    & h3 {
+    
+                    }
+                    & p {
+                        
+                    }
+                }
+                &:hover {
+                    transform: scale(1.0)translateY(-9px);
+                }
+            }
+            .reference-card-side {
+                transition: all .2s ease-in-out;
+                padding: 2rem;
+                width: 100%;
+                border-radius: .5rem;
+                background: #020617;
+                box-shadow: 0 0 25px var(--skin-color);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                .reference-card-side-image {
+                    border: var(--skin-color) solid .1rem;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+                .reference-card-side-text {
+                    text-align: center;
+                }
+                &:hover {
+                    transform: scale(1.0)translateY(-9px);
+                }
+            }
+        }
+    }
+}

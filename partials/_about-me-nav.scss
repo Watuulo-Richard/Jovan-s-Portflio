@@ -1,0 +1,277 @@
+.about-me-nav {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 2px 4px rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .logo {
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+        & a {
+            color: var(--skin-color);
+            font-weight: bold;
+            padding: 0.9375rem 1.25rem;
+            font-size: 1.875rem;
+            letter-spacing: 0.3125rem;
+            position: relative;
+            & span {
+                font-size: 2rem;
+                color: var(--skin-color);
+            }
+        }
+
+        & a::before {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-bottom: 0.3125rem solid var(--skin-color);
+            border-left: 0.3125rem solid var(--skin-color);
+            bottom: 20%;
+            left: 0;
+        }
+        
+        & a::after {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-top: 0.3125rem solid var(--skin-color);
+            border-right: 0.3125rem solid var(--skin-color);
+            top: 20%;
+            right: 0;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            color: var(--skin-color);
+            
+            & i {
+                font-size: 1.3rem;
+            }
+            & p {
+                border-bottom: 1px solid transparent;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    border-bottom: 1px solid var(--skin-color);
+                }
+            }
+            
+        }
+    }
+    #hamburgBtn {
+        display: none;
+        border: none;
+        background: transparent;
+        color: var(--skin-color);
+        cursor: pointer;
+        & i {
+            font-size: 1.3rem;
+        }
+    }
+    @media (max-width: 1024px){
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 2px 4px rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .logo {
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+        & a {
+            color: var(--skin-color);
+            font-weight: bold;
+            padding: 0.9375rem 1.25rem;
+            font-size: 1.875rem;
+            letter-spacing: 0.3125rem;
+            position: relative;
+            & span {
+                font-size: 2rem;
+                color: var(--skin-color);
+            }
+        }
+
+        & a::before {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-bottom: 0.3125rem solid var(--skin-color);
+            border-left: 0.3125rem solid var(--skin-color);
+            bottom: 20%;
+            left: 0;
+        }
+        
+        & a::after {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-top: 0.3125rem solid var(--skin-color);
+            border-right: 0.3125rem solid var(--skin-color);
+            top: 20%;
+            right: 0;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .nav-links {
+        transition: all .3s ease-in-out;
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        width: 18%;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        border-left: 3px solid var(--skin-color);
+        border-bottom: 3px solid var(--skin-color);
+        border-bottom-left-radius: .5rem;
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            color: var(--skin-color);
+            & i {
+                font-size: 1.3rem;
+            }
+            & p {
+                border-bottom: 1px solid transparent;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    border-bottom: 1px solid var(--skin-color);
+                }
+            }
+            
+        }
+    }
+    #hamburgBtn {
+        display: block;
+        border: none;
+        background: transparent;
+        color: var(--skin-color);
+        cursor: pointer;
+        & i {
+            font-size: 1.3rem;
+        }
+    }
+    }
+    
+    @media (max-width: 768px){
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5), 0px 2px 4px rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    .logo {
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+        & a {
+            color: var(--skin-color);
+            font-weight: bold;
+            padding: 0.9375rem 1.25rem;
+            font-size: 1rem;
+            letter-spacing: 0.3125rem;
+            position: relative;
+            & span {
+                font-size: 1rem;
+                color: var(--skin-color);
+            }
+        }
+
+        & a::before {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-bottom: 0.3125rem solid var(--skin-color);
+            border-left: 0.3125rem solid var(--skin-color);
+            bottom: 20%;
+            left: 0;
+        }
+        
+        & a::after {
+            content: "";
+            position: absolute;
+            width: 0.3125rem;
+            height: 0.3125rem;
+            border-top: 0.3125rem solid var(--skin-color);
+            border-right: 0.3125rem solid var(--skin-color);
+            top: 20%;
+            right: 0;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .nav-links {
+        transition: all .4s ease-in-out;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 38%;
+        align-items: start;
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: .3rem;
+            color: var(--skin-color);
+            & i {
+                font-size: 1rem;
+            }
+            & p {
+                border-bottom: 1px solid transparent;
+                transition: all .3s ease-in-out;
+                font-size: .8rem;
+                &:hover {
+                    border-bottom: 1px solid var(--skin-color);
+                }
+            }
+            
+        }
+        #hamburgBtn {
+            border: none;
+            background: transparent;
+            color: var(--skin-color);
+            cursor: pointer;
+            & i {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    }
+    .navbar-active {
+        display: flex;
+        transition: all .4s ease-in-out;
+    }
+}
+
