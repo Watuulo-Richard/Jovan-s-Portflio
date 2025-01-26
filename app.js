@@ -1,9 +1,13 @@
 const descriptions = document.querySelectorAll(".description")
 const servicesContainer = document.querySelector(".services-items")
 const paragraphs = document.querySelectorAll(".service-item p")
-console.log(paragraphs)
+// console.log(paragraphs)
 const downloadButtonElement = document.getElementById("download-resume")
+const activeLink = document.querySelector(".link-active")
 
+document.addEventListener('DOMContentLoaded', ()=>{
+    activeLink.classList.add('link-active')
+})
 const servicesArray = [
     {
         icon : '<i class="fas fa-database"></i>',
@@ -90,6 +94,7 @@ moreBtns.forEach((moreBtn) => {
         // Change button text based on the state
         if (description.classList.contains("line-clamp")) {
             moreBtn.textContent = "More";
+            description.classList.add('more-style')
         } else {
             moreBtn.textContent = "Less";
         }

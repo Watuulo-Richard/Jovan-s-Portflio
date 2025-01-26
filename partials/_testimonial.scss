@@ -3,13 +3,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 3rem;
+        padding: 3rem 0rem;
         & h2 {
             font-size: 2.5rem;
+            color: var(--bg-main);
         }
     }
     .swiper {
-        box-shadow: 0 0 15px var(--skin-color);
+        box-shadow: 0 0 15px var(--bg-main);
         max-width: 1200px;
         margin: 0rem auto;
         background-color: var( --text-black-700);
@@ -51,7 +52,7 @@
                     .quote-icon {
                         padding: 1rem 0rem;
                         font-size: 2rem;
-                        color: var(--skin-color);
+                        color: var(--bg-main);
                     }
                     .personal-details {
                         display: flex;
@@ -67,7 +68,7 @@
                             font-weight: 300;
                         }
                         .company {
-                            color: var(--bg-black-100);
+                            color: var(--bg-main);
                             font-weight: 600;
                         }
                     }
@@ -75,13 +76,13 @@
             }
         }
         .swiper-button-next {
-            color: var(--skin-color);
+            color: var(--bg-main);
         }
         .swiper-button-prev {
-            color: var(--skin-color);
+            color: var(--bg-main);
         }
         .swiper-pagination {
-            color: var(--skin-color);
+            color: var(--bg-main) !important;
         }
     }
 }

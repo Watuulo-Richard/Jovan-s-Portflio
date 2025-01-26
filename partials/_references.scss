@@ -8,11 +8,13 @@
             align-items: center;
             justify-content: center;
             padding: 3rem 0rem;
-            & h2 {
+            & h3 {
                 font-size: 2.5rem;
+                color: var(--bg-main);
             }
             & p {
                 font-size: 1rem;
+                color: var(--bg-main);
             }
         }
         .reference-grid-container {
@@ -23,7 +25,7 @@
             .reference-card {
                 position: relative;
                 padding: 2rem;
-                border: var(--skin-color) solid .1rem;
+                border: var(--bg-main) solid .1rem;
                 width: 100%;
                 border-radius: .5rem;
                 transition: all .2s ease-in-out;
@@ -46,10 +48,13 @@
                 .reference-card-text {
                     text-align: center;
                     & h3 {
-    
+                        color: var(--bg-main);
+                    }
+                    & h4 {
+                        color: var(--bg-main);
                     }
                     & p {
-                        
+                        color: var(--bg-main);
                     }
                 }
                 &:hover {
@@ -69,7 +74,7 @@
                 justify-content: center;
                 gap: 1rem;
                 .reference-card-side-image {
-                    border: var(--skin-color) solid .1rem;
+                    border: var(--bg-main) solid .1rem;
                     width: 80px;
                     height: 80px;
                     border-radius: 50%;
@@ -83,6 +88,15 @@
                 }
                 .reference-card-side-text {
                     text-align: center;
+                    & h3 {
+                        color: var(--bg-main);
+                    }
+                    & h4 {
+                        color: var(--bg-main);
+                    }
+                    & p {
+                        color: var(--bg-main);
+                    }
                 }
                 &:hover {
                     transform: scale(1.0)translateY(-9px);

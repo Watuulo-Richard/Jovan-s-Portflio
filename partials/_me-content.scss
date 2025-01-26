@@ -4,8 +4,6 @@
         display: flex;
         align-items: center;
         gap: 2rem;
-        // max-width: 1400px;
-        // margin: 0rem auto;
         padding-top: 8rem;
         .about-me-image {
             width: 40%;
@@ -19,7 +17,7 @@
                 gap: 1rem;
                 .social-link {
                     background: var(--skin-color);
-                    box-shadow: 0 0 5px var(--bg-black-100);
+                    box-shadow: 0 0 5px var(--bg-main);
                     width: 60px;
                     height: 60px;
                     display: flex;
@@ -28,7 +26,7 @@
                     border-radius: 50%;
                     transition: all .2s ease-in-out;
                     & i {
-                        color: var(--bg-black-100);
+                        color: var(--bg-main);
                         font-size: 2rem;
                         &:hover {
                             color: var(--skin-color);
@@ -44,7 +42,8 @@
                 width: 50%;
                 height: auto;
                 border-radius: 1rem;
-                box-shadow: 0 0 25px var(--skin-color);
+                box-shadow: 0 0 5px var(--bg-main);
+                overflow: hidden;
                 & img {
                     width: 100%;
                     height: 100%;
@@ -56,34 +55,116 @@
         .about-me-text {
             width: 60%;
             .text-only {
-                // text-align: left;
+                padding-right: 10rem;
                 & h2 {
                    font-size: 2.5rem;
+                   color: var(--bg-main);
                    & i {
-                    color: var(--skin-color);
+                    color: var(--bg-main);
                    }
                 }
                 & h3 {
-                   font-size: 1.5rem; 
+                   font-size: 1.5rem;
+                   color: var(--bg-main);
                 }
                 & p {
-                   color: #f3f4f6; 
+                    color: var(--bg-main); 
                 }
             }
             .text-buttons {
                 padding: 1rem 0rem;
                 .link-up-btn {
                     border: none;
-                    color: var(--skin-color);
+                    color: var(--bg-main);
                     padding: .5rem 2rem;
                     border-radius: 2rem;
                     font-size: 1rem;
                     background: transparent;
-                    border: var(--skin-color) solid .1rem;
+                    border: var(--bg-main) solid .1rem;
                     transition: all .3s ease-in-out;
+                    cursor: pointer;
                     &:hover {
-                        border: var(--bg-black-900) solid .1rem;
-                        color: var(--bg-black-900);
+                        border: var(--skin-color) solid .1rem;
+                        color: var(--bg-main);
+                    }
+                }
+            }
+            #resumeViewModal {
+                display: none;
+                position: fixed;
+                inset: 0;
+                z-index: 10;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+                background: rgba(0, 0, 0, 0.5);
+                animation-name: modalopen;
+                animation-duration: 2s;
+                @keyframes modalopen {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
+                }
+                .modal-content {
+                    background: #8e8a8fec;
+                    width: 80%;
+                    margin: 10% auto;
+                    box-shadow: 0 0 5px var(--bg-main);
+                    border-radius: .3rem;
+                    overflow: hidden;
+                    .modal-header {
+                        padding: .5rem 1rem;
+                        background: var(--bg-main);
+                        display: flex;
+                        justify-content: space-between;
+                        & h3 {
+                            font-size: 2rem;
+                        }
+                        #modalCloseBtn {
+                            border: none;
+                            font-size: 2rem;
+                            color: #6b7280;
+                            cursor: pointer;
+                            background: transparent;
+                            & i {
+
+                            }
+                            &:hover {
+                                color: var(--skin-color);
+                            }
+                        }
+                    }
+                    .modal-body {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: .5rem;
+                        // background: var(--bg-black-50);
+                        .image-preview {
+                            width: 50%;
+                            & img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                object-fit: cover;
+                            }
+                        }
+                        .pdf-preview-container {
+                            width: 50%;
+                            height: 300px;
+                            background: red;
+                            & iframe {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .modal-footer {
+                        padding: .5rem 1rem;
+                        background: var(--bg-main);
+                        display: flex;
+                        justify-content: space-between;
+                        & h3 {
+                            font-size: 2rem;
+                        }
                     }
                 }
             }
@@ -102,7 +183,7 @@
                 flex-direction: column-reverse;
                 width: 100%;
                 padding-bottom: 1rem;
-                border-bottom: var(--skin-color) solid .01rem;
+                border-bottom: var(--bg-main) solid .01rem;
                 .social-links {
                     display: flex;
                     flex-direction: row;
@@ -135,7 +216,7 @@
                     height: auto;
                     margin: 0 auto;
                     border-radius: 1rem;
-                    box-shadow: 0 0 25px var(--skin-color);
+                    box-shadow: 0 0 10px var(--bg-main);
                     & img {
                         width: 100%;
                         height: 100%;
@@ -148,10 +229,11 @@
                 width: 100%;
                 .text-only {
                     text-align: center;
+                    padding-right: 0rem;
                     & h2 {
                        font-size: 2.5rem;
                        & i {
-                        color: var(--skin-color);
+                        color: var(--bg-main);
                        }
                     }
                     & h3 {
@@ -170,16 +252,95 @@
                     gap: 1rem;
                     .link-up-btn {
                         border: none;
-                        color: var(--skin-color);
+                        color: var(--bg-main);
                         padding: .5rem 2rem;
                         border-radius: 2rem;
                         font-size: 1rem;
                         background: transparent;
-                        border: var(--skin-color) solid .1rem;
+                        border: var(--bg-main) solid .1rem;
                         transition: all .3s ease-in-out;
                         &:hover {
                             border: var(--bg-black-900) solid .1rem;
                             color: var(--bg-black-900);
+                        }
+                    }
+                }
+                #resumeViewModal {
+                    display: none;
+                    position: fixed;
+                    inset: 0;
+                    z-index: 10;
+                    height: 100%;
+                    width: 100%;
+                    overflow: auto;
+                    background: rgba(0, 0, 0, 0.5);
+                    animation-name: modalopen;
+                    animation-duration: 2s;
+                    @keyframes modalopen {
+                        from {opacity: 0;}
+                        to {opacity: 1;}
+                    }
+                    .modal-content {
+                        background: #8e8a8fec;
+                        width: 80%;
+                        margin: 10% auto;
+                        box-shadow: 0 0 5px var(--bg-main);
+                        border-radius: .3rem;
+                        overflow: hidden;
+                        .modal-header {
+                            padding: .5rem 1rem;
+                            background: var(--bg-main);
+                            display: flex;
+                            justify-content: space-between;
+                            & h3 {
+                                font-size: 2rem;
+                            }
+                            #modalCloseBtn {
+                                border: none;
+                                font-size: 2rem;
+                                color: #6b7280;
+                                cursor: pointer;
+                                background: transparent;
+                                & i {
+    
+                                }
+                                &:hover {
+                                    color: var(--skin-color);
+                                }
+                            }
+                        }
+                        .modal-body {
+                            flex-direction: column;
+                            // background: var(--bg-black-50);
+                            .image-preview {
+                                order: 2;
+                                width: 100%;
+                                & img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object-fit: cover;
+                                }
+                            }
+                            .pdf-preview-container {
+                                order: 1;
+                                width: 100%;
+                                height: 300px;
+                                background: red;
+                                & iframe {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .modal-footer {
+                            padding: .5rem 1rem;
+                            background: var(--bg-main);
+                            display: flex;
+                            justify-content: space-between;
+                            & h3 {
+                                font-size: 2rem;
+                            }
                         }
                     }
                 }
@@ -198,14 +359,14 @@
                 flex-direction: column-reverse;
                 width: 100%;
                 padding-bottom: 1rem;
-                border-bottom: var(--skin-color) solid .01rem;
+                border-bottom: var(--bg-main) solid .01rem;
                 .social-links {
                     display: flex;
                     flex-direction: row;
                     gap: 1rem;
                     .social-link {
                         background: var(--skin-color);
-                        box-shadow: 0 0 5px var(--bg-black-100);
+                        box-shadow: 0 0 5px var(--bg-main);
                         width: 30px;
                         height: 30px;
                         display: flex;
@@ -231,13 +392,12 @@
                     height: auto;
                     margin: 0 auto;
                     border-radius: 1rem;
-                    box-shadow: 0 0 25px var(--skin-color);
+                    box-shadow: 0 0 10px var(--bg-main);
                     order: 1;
                     & img {
                         width: 100%;
                         height: 100%;
                         display: block;
-        
                     }
                 }
             }
@@ -246,10 +406,11 @@
                 order: 2;
                 .text-only {
                     text-align: center;
+                    padding-right: 0rem;
                     & h2 {
                        font-size: 2.5rem;
                        & i {
-                        color: var(--skin-color);
+                        color: var(--bg-main);
                        }
                     }
                     & h3 {
@@ -265,17 +426,100 @@
                     gap: 1rem;
                     padding: 1rem 0rem;
                     .link-up-btn {
+                        width: 100%;
                         border: none;
-                        color: var(--skin-color);
+                        color: var(--bg-main);
                         padding: .5rem 2rem;
                         border-radius: 2rem;
                         font-size: 1rem;
                         background: transparent;
-                        border: var(--skin-color) solid .1rem;
+                        border: var(--bg-main) solid .1rem;
                         transition: all .3s ease-in-out;
                         &:hover {
-                            border: var(--bg-black-900) solid .1rem;
-                            color: var(--bg-black-900);
+                            border: var(--bg-black-50) solid .1rem;
+                            color: var(--bg-black-50);
+                        }
+                    }
+                }
+                #resumeViewModal {
+                    margin-top: 15%;
+                    display: none;
+                    position: fixed;
+                    inset: 0;
+                    z-index: 10;
+                    height: 100%;
+                    width: 100%;
+                    overflow: auto;
+                    background: rgba(0, 0, 0, 0.5);
+                    animation-name: modalopen;
+                    animation-duration: 2s;
+                    @keyframes modalopen {
+                        from {opacity: 0;}
+                        to {opacity: 1;}
+                    }
+                    .modal-content {
+                        background: #8e8a8fec;
+                        width: 80%;
+                        margin: 10% auto;
+                        box-shadow: 0 0 5px var(--bg-main);
+                        border-radius: .3rem;
+                        overflow: hidden;
+                        .modal-header {
+                            padding: .5rem 1rem;
+                            background: var(--bg-main);
+                            display: flex;
+                            justify-content: space-between;
+                            & h3 {
+                                font-size: 2rem;
+                            }
+                            #modalCloseBtn {
+                                border: none;
+                                font-size: 2rem;
+                                color: #6b7280;
+                                cursor: pointer;
+                                background: transparent;
+                                & i {
+    
+                                }
+                                &:hover {
+                                    color: var(--skin-color);
+                                }
+                            }
+                        }
+                        .modal-body {
+                            flex-direction: column;
+                            justify-content: space-between;
+                            gap: .5rem;
+                            // background: var(--bg-black-50);
+                            .image-preview {
+                                width: 100%;
+                                order: 2;
+                                & img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object-fit: cover;
+                                }
+                            }
+                            .pdf-preview-container {
+                                order: 1;
+                                width: 100%;
+                                height: 300px;
+                                background-color: red;
+                                & iframe {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                        .modal-footer {
+                            padding: .5rem 1rem;
+                            background: var(--bg-main);
+                            display: flex;
+                            justify-content: space-between;
+                            & h3 {
+                                font-size: 2rem;
+                            }
                         }
                     }
                 }
@@ -283,3 +527,4 @@
         }
     }
 }
+

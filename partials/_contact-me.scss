@@ -57,6 +57,7 @@
             .contact-info-item {
                 text-align: center;
                 & i {
+                    color: var(--bg-main);
                     padding: 1rem;
                     border-radius: 3rem;
                     background-color: var(--skin-color);
@@ -67,7 +68,7 @@
                 }
                 & i:hover {
                     box-shadow: 0 0 25px var(--skin-color), 
-                                            0 0 50px var(--skin-color);
+                        0 0 50px var(--skin-color);
                     color: white;
                     transform: translateY(-10px);
                 }

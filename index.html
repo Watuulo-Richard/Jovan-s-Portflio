@@ -6,6 +6,8 @@
     <title>Lubega Jovan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Lubega Jovan</title>
     <!-- Favicon Styling -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
@@ -25,7 +27,7 @@
             <hr class="border-design">
             <!-- Navigation-Links -->
             <div class="nav-links">
-                <div class="nav-link">
+                <div class="nav-link link-active">
                     <a href="#home-section">
                         <i class="fa-solid fa-house"></i>
                         <span class="nav-label">Home</span>
@@ -82,20 +84,26 @@
         <div class="main-content max-padding-width">
             <!-- Home-Section -->
             <section id="home-section" class="home-section">
-                <div class="row-for-home-section">
-                    <div class="home-info">
+                <div class="row-for-home-section" >
+                    <div class="home-info" data-aos="fade-up">
                         <h3 class="hello-text"><span class="name"></span></h3>
-                        <h2 class="my-profession">I'm a <span class="typing">Senior Statistician At The Ministry Of Education & Sports</span></h2>
+                        <h2 class="my-profession">
+                            I'm a <span class="typing">Senior Statistician At The Ministry Of Education & Sports</span>
+                        </h2>
                         <p>I am Lubega Jovan, a Senior Statistician at the Ministry of Education and Sports in Uganda, with over 10 years of experience in the field of statistics and data analysis. Throughout my career, I have been fortunate to contribute to the development and management of critical educational data, which plays a significant role in shaping the policies and strategies that guide the education sector in Uganda...</p>
-                        <a href="./about.html" class="btn more-info">Get More Info About Me...</a>
+                        <div class="more-info-container">
+                            <button type="button" class="btn more-info">
+                                <a href="./about.html" class="btn more-info" >Get More Info About Me...</a>
+                            </button>
+                        </div>
                     </div>
-                    <div class="home-img">
-                        <img src="./images/portrait-female-interior-designer-home.jpg" alt="">
+                    <div class="home-img" data-aos="fade-left">
+                        <img src="./images/2-removebg-preview.png" alt="">
                     </div>
                 </div>
             </section>
             <!-- About-Section -->
-            <section id="about-section" class="about-section">
+            <section id="about-section" class="about-section" data-aos="fade-up">
                 <div class="section-title">
                     <h2>About Me</h2>
                 </div>
@@ -114,11 +122,11 @@
                                 
                                 It has been a rewarding journey, and I am proud to continue contributing to Uganda’s education sector, helping to improve the lives of students and communities across the nation through the power of data.
                                 
-                                This version presents Lubega Jovan's professional experience directly from her perspective. </p><button class="more">more</button>
+                                This version presents Lubega Jovan's professional experience directly from her perspective. </p><button class="more">More...</button>
                         </div>
                     </div> 
                 </div>
-                <div class="personal-info">
+                <div class="personal-info" >
                     <div class="info-item">
                         <p>Birthday : <span class="un-told">17 <sup>th</sup> Sept, 1999</span></p>
                     </div>
@@ -192,7 +200,7 @@
                     </div>
                 </div>
                 <div class="education-experience">
-                    <div class="education">
+                    <div class="education" data-aos="fade-right">
                         <h3 class="title">Education</h3>
                         <div class="timeline-box">
                             <div class="timeline"> 
@@ -213,7 +221,7 @@
                                         <i class="fa-solid fa-calendar-days"></i> 2008 - 2012
                                     </h3>
                                     <h4 class="timeline-title">Bachelor of Science in Business Statistics From Makerere University</h4>
-                                    <p class="timeline-title">The Bachelor of Science in Business Statistics is a program that combines statistical methods with business principles to analyze and interpret data for decision-making. It equips students with skills in data analysis, financial modeling, and risk assessment. Graduates are prepared for roles in business analytics, market research, and financial planning. The course emphasizes practical applications in business environments.</p>
+                                    <p class="timeline-text">The Bachelor of Science in Business Statistics is a program that combines statistical methods with business principles to analyze and interpret data for decision-making. It equips students with skills in data analysis, financial modeling, and risk assessment. Graduates are prepared for roles in business analytics, market research, and financial planning. The course emphasizes practical applications in business environments.</p>
                                 </div>
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
@@ -222,7 +230,7 @@
                                     </h3>
                                     <h4 class="timeline-title">Uganda Advanced Certificate of Education (U.A.C.E) From Uganda Martyrs Secondary School, Namugongo
                                         </h4>
-                                    <p class="timeline-title">I completed my A-Level education at Uganda Martyrs Secondary School, Namugongo, earning the Uganda Advanced Certificate of Education (U.A.C.E).</p>
+                                    <p class="timeline-text">I completed my A-Level education at Uganda Martyrs Secondary School, Namugongo, earning the Uganda Advanced Certificate of Education (U.A.C.E).</p>
                                 </div>
 
                                 <div class="timeline-item">
@@ -232,7 +240,7 @@
                                     </h3>
                                     <h4 class="timeline-title">Uganda Certificate of Education (U.C.E) Uganda Martyrs Secondary School, Namugongo
                                     </h4>
-                                    <p class="timeline-title">I earned the Uganda Certificate of Education (U.C.E) at Uganda Martyrs Secondary School, Namugongo.</p>
+                                    <p class="timeline-text">I earned the Uganda Certificate of Education (U.C.E) at Uganda Martyrs Secondary School, Namugongo.</p>
                                 </div>
 
                                 <div class="timeline-item">
@@ -242,19 +250,19 @@
                                     </h3>
                                     <h4 class="timeline-title">Primary Leaving Examination (P.L.E) St. Anthony Nursery and Primary School,Kajjansi.
                                     </h4>
-                                    <p class="timeline-title">I completed my Primary Leaving Examination (P.L.E) at St. Anthony Nursery and Primary School, Kajjansi.</p>
+                                    <p class="timeline-text">I completed my Primary Leaving Examination (P.L.E) at St. Anthony Nursery and Primary School, Kajjansi.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="experience">
+                    <div class="experience" data-aos="fade-left">
                         <h3 class="title">Experience</h3>
                         <div class="timeline-box-Experience">
                             <div class="timelineExperience"> 
                                 <div class="timeline-item">
                                     <div class="circle-dot"></div>
-                                    <h3 class="timeline-Experiencedate">
-                                        <i class="fa-solid fa-calendar-days"></i> 2023 - Up-To-Date
+                                    <h3 class="experience-date">
+                                        <i class="fa-solid fa-calendar-days"></i> <p>2023 - Up-To-Date</p>
                                     </h3>
                                     <h4 class="experience-title">Ministry Of Education & Sports</h4>
                                     <div class="occupation">
@@ -266,7 +274,7 @@
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2013 - 2023
+                                        <i class="fa-solid fa-calendar-days"></i> <p>2013 - 2023</p>
                                     </h3>
                                     <h4 class="experience-title">Ministry of Agriculture Animal Industry And Fisheries.</h4>
                                     <div class="occupation">
@@ -277,7 +285,7 @@
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2010 - 2011
+                                        <i class="fa-solid fa-calendar-days"></i> <p>2010 - 2011</p>
                                     </h3>
                                     <h4 class="experience-title">Sanyu Babies Home</h4>
                                     <div class="occupation">
@@ -288,7 +296,7 @@
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2009 - 2010
+                                        <i class="fa-solid fa-calendar-days"></i> <p>2009 - 2010</p>
                                     </h3>
                                     <h4 class="experience-title">Rakai District Local Government In The Planning Department</h4>
                                     <div class="occupation">
@@ -300,7 +308,7 @@
                                 <div class="experience-item">
                                     <div class="circle-dot"></div>
                                     <h3 class="experience-date">
-                                        <i class="fa-solid fa-calendar-days"></i> 2008 - 2009
+                                        <i class="fa-solid fa-calendar-days"></i> <p>2008 - 2009</p>
                                     </h3>
                                     <h4 class="experience-title">Infrastructural Design Forum(Id Forum)</h4>
                                     <div class="occupation">
@@ -314,7 +322,7 @@
                 </div> 
             </section>
             <!-- Services-Section -->
-            <section id="services-section" class="services-section">
+            <section id="services-section" class="services-section" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Services</h2>
                 </div>
@@ -409,7 +417,7 @@
                 </div>
             </section>
              <!-- Portfolio-Section -->
-            <section id="portfolio-section" class="portfolio-section">
+            <section id="portfolio-section" class="portfolio-section" data-aos="fade-up">
                 <div class="section-title">
                     <h2>Portfolio</h2>
                 </div>
@@ -455,7 +463,7 @@
                 </div>
             </section>
             <!-- Contact-Section -->
-            <section id="contact-section" class="contact-section">
+            <section id="contact-section" class="contact-section" data-aos="fade-up">
                 <div class="contact-container">
                     <div class="contact-title">
                         <h2>Contact - Me <i class="fa-solid fa-id-card"></i></h2>
@@ -533,5 +541,11 @@
         </div>
     </div>
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 3000 
+    });
+    </script>
 </body>
 </html>

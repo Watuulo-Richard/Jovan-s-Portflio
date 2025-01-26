@@ -17,7 +17,7 @@
         transition: all .3s ease-in-out;
         text-transform: capitalize;
         & a {
-            color: var(--skin-color);
+            color: var(--bg-main);
             font-weight: bold;
             padding: 0.9375rem 1.25rem;
             font-size: 1.875rem;
@@ -25,7 +25,7 @@
             position: relative;
             & span {
                 font-size: 2rem;
-                color: var(--skin-color);
+                color: var(--bg-main);
             }
         }
 
@@ -34,8 +34,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-bottom: 0.3125rem solid var(--skin-color);
-            border-left: 0.3125rem solid var(--skin-color);
+            border-bottom: 0.3125rem solid var(--bg-main);
+            border-left: 0.3125rem solid var(--bg-main);
             bottom: 20%;
             left: 0;
         }
@@ -45,8 +45,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-top: 0.3125rem solid var(--skin-color);
-            border-right: 0.3125rem solid var(--skin-color);
+            border-top: 0.3125rem solid var(--bg-main);
+            border-right: 0.3125rem solid var(--bg-main);
             top: 20%;
             right: 0;
         }
@@ -63,7 +63,7 @@
             display: flex;
             align-items: center;
             gap: .3rem;
-            color: var(--skin-color);
+            color: var(--bg-main);
             
             & i {
                 font-size: 1.3rem;
@@ -72,7 +72,7 @@
                 border-bottom: 1px solid transparent;
                 transition: all .3s ease-in-out;
                 &:hover {
-                    border-bottom: 1px solid var(--skin-color);
+                    border-bottom: 1px solid var(--bg-main);
                 }
             }
             
@@ -82,7 +82,7 @@
         display: none;
         border: none;
         background: transparent;
-        color: var(--skin-color);
+        color: var(--bg-main);
         cursor: pointer;
         & i {
             font-size: 1.3rem;
@@ -103,7 +103,7 @@
         transition: all .3s ease-in-out;
         text-transform: capitalize;
         & a {
-            color: var(--skin-color);
+            color: var(--bg-main);
             font-weight: bold;
             padding: 0.9375rem 1.25rem;
             font-size: 1.875rem;
@@ -111,7 +111,7 @@
             position: relative;
             & span {
                 font-size: 2rem;
-                color: var(--skin-color);
+                color: var(--bg-main);
             }
         }
 
@@ -120,8 +120,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-bottom: 0.3125rem solid var(--skin-color);
-            border-left: 0.3125rem solid var(--skin-color);
+            border-bottom: 0.3125rem solid var(--bg-main);
+            border-left: 0.3125rem solid var(--bg-main);
             bottom: 20%;
             left: 0;
         }
@@ -131,8 +131,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-top: 0.3125rem solid var(--skin-color);
-            border-right: 0.3125rem solid var(--skin-color);
+            border-top: 0.3125rem solid var(--bg-main);
+            border-right: 0.3125rem solid var(--bg-main);
             top: 20%;
             right: 0;
         }
@@ -150,14 +150,14 @@
         position: absolute;
         top: 100%;
         right: 0;
-        border-left: 3px solid var(--skin-color);
-        border-bottom: 3px solid var(--skin-color);
+        border-left: 3px solid var(--bg-main);
+        border-bottom: 3px solid var(--bg-main);
         border-bottom-left-radius: .5rem;
         .nav-link {
             display: flex;
             align-items: center;
             gap: .3rem;
-            color: var(--skin-color);
+            color: var(--bg-main);
             & i {
                 font-size: 1.3rem;
             }
@@ -165,7 +165,7 @@
                 border-bottom: 1px solid transparent;
                 transition: all .3s ease-in-out;
                 &:hover {
-                    border-bottom: 1px solid var(--skin-color);
+                    border-bottom: 1px solid var(--bg-main);
                 }
             }
             
@@ -175,7 +175,7 @@
         display: block;
         border: none;
         background: transparent;
-        color: var(--skin-color);
+        color: var(--bg-main);
         cursor: pointer;
         & i {
             font-size: 1.3rem;
@@ -195,7 +195,7 @@
         transition: all .3s ease-in-out;
         text-transform: capitalize;
         & a {
-            color: var(--skin-color);
+            color: var(--bg-main);
             font-weight: bold;
             padding: 0.9375rem 1.25rem;
             font-size: 1rem;
@@ -203,7 +203,7 @@
             position: relative;
             & span {
                 font-size: 1rem;
-                color: var(--skin-color);
+                color: var(--bg-main);
             }
         }
 
@@ -212,8 +212,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-bottom: 0.3125rem solid var(--skin-color);
-            border-left: 0.3125rem solid var(--skin-color);
+            border-bottom: 0.3125rem solid var(--bg-main);
+            border-left: 0.3125rem solid var(--bg-main);
             bottom: 20%;
             left: 0;
         }
@@ -223,8 +223,8 @@
             position: absolute;
             width: 0.3125rem;
             height: 0.3125rem;
-            border-top: 0.3125rem solid var(--skin-color);
-            border-right: 0.3125rem solid var(--skin-color);
+            border-top: 0.3125rem solid var(--bg-main);
+            border-right: 0.3125rem solid var(--bg-main);
             top: 20%;
             right: 0;
         }
@@ -244,7 +244,7 @@
             display: flex;
             align-items: center;
             gap: .3rem;
-            color: var(--skin-color);
+            color: var(--bg-main);
             & i {
                 font-size: 1rem;
             }
@@ -253,7 +253,7 @@
                 transition: all .3s ease-in-out;
                 font-size: .8rem;
                 &:hover {
-                    border-bottom: 1px solid var(--skin-color);
+                    border-bottom: 1px solid var(--bg-main);
                 }
             }
             
@@ -261,7 +261,7 @@
         #hamburgBtn {
             border: none;
             background: transparent;
-            color: var(--skin-color);
+            color: var(--bg-main);
             cursor: pointer;
             & i {
                 font-size: 1.3rem;

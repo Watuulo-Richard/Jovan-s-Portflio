@@ -1,5 +1,6 @@
 .about-section {
     padding: 2rem 0rem;
+    overflow: hidden;
 
     .section-title {
         & h2 {
@@ -56,9 +57,11 @@
             .more {
                 border: none;
                 color: var(--skin-color);
+                font-weight: bold;
                 cursor: pointer;
                 font-size: 1rem;
                 background: none;
+                transition: all .3s ease-in-out;
             }  
             
         }
@@ -151,7 +154,6 @@
 
         .skills {
                 width: 50%;
-                
                 .skill-item {
                     text-transform: capitalize;
                     line-height: 1.5rem;
@@ -159,7 +161,6 @@
                     color: var(--text-black-900);
                     font-size: 1rem;
                     padding: 1rem 0rem;
-    
                     .progress-bar {
                         background-color: var(--text-black-700);
                         height: 0.3125rem;
@@ -243,7 +244,7 @@
             }
             
             .timeline-box {
-                background-color: var(--bg-black-100);
+                background-color: var(--skin-color);
                 border: 1px solid var(--bg-black-50);
                 border-radius: .5rem;
                 
@@ -254,7 +255,7 @@
                     & h3 {
                         font-size: 1.5rem;
                         font-weight: bold;
-                        color: var(--text-black-900);
+                        color: var(--bg-main);
                         text-transform: capitalize;
                     }
                 }
@@ -268,7 +269,7 @@
                 height: 100%;
                 left: 7px;
                 top: 0;
-                background-color: var(--skin-color);
+                background-color: var(--bg-main);
                    
             }
 
@@ -278,7 +279,19 @@
                 height: 15px;
                 width: 15px;
                 border-radius: 15px;
-                background-color: var(--skin-color);
+                background-color: var(--bg-main);
+            }
+            
+            .timeline-date {
+                & i {
+
+                }
+            }
+            .timeline-title {
+                color: var(--bg-main);
+            }
+            .timeline-text {
+                color: var(--bg-black-50);
             }
         }
 
@@ -294,7 +307,7 @@
             }
 
             .timeline-box-Experience {
-                background-color: var(--bg-black-100);
+                background-color: var(--skin-color);
                 border: 1px solid var(--bg-black-50);
                 border-radius: .5rem;
 
@@ -318,7 +331,7 @@
                 height: 100%;
                 left: 7px;
                 top: 0;
-                background-color: var(--skin-color);
+                background-color: var(--bg-main);
                    
             }
 
@@ -328,7 +341,34 @@
                 height: 15px;
                 width: 15px;
                 border-radius: 15px;
-                background-color: var(--skin-color);
+                background-color: var(--bg-main);
+            }
+
+            .experience-date {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                & i {
+                    color: var(--bg-main);
+                }
+                & p {
+                    color: var(--bg-main);
+                }
+            }
+            .experience-title {
+                color: var(--bg-main);
+            }
+            .occupation {
+                color: var(--bg-black-50);
+                display: flex;
+                gap: .5rem;
+                align-items: center;
+                & h5 {
+                    font-size: 1rem;
+                }
+                .timeline-title {
+                    color: var(--bg-main);
+                }
             }
     
         }
@@ -362,4 +402,11 @@
         }
     }
 
+}
+
+.more-style {
+    // transition: all .5s ease-in-out;
+    height: auto; /* For expanded state */
+    overflow: hidden; /* Prevent overflow during transition */
+    transition: height 0.3s ease; /* Smooth height transition */
 }

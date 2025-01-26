@@ -1,0 +1,150 @@
+#awards {
+    max-width: 1200px;
+    margin: 0rem auto;
+    .awards-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & h3 {
+            font-size: 2.5rem;
+            color: var(--bg-main);
+        }
+    }
+    .flex-container {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 0rem;
+        .left-award {
+            width: 70%;
+            ul {
+                
+                & li {
+                    color: #bbf7d0;
+                    & p {
+                        color: var(--bg-main)
+                    }
+                }
+                .second-paragraph {
+                    padding: 2rem 0rem;
+                }
+            }
+        }
+        .right-award {
+            width: 30%;
+            .awards-image-container {
+                width: 20rem;
+                border-radius: 1rem;
+                box-shadow: 0 0 5px var(--bg-main);
+                overflow: hidden;
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    @media(max-width:1024px){
+        .awards-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & h3 {
+                font-size: 2.5rem;
+                color: var(--bg-main);
+            }
+        }
+        .flex-container {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            .left-award {
+                width: 100%;
+                ul {
+                    
+                    & li {
+                        color: #bbf7d0;
+                        & p {
+                            color: var(--bg-main)
+                        }
+                    }
+                    .second-paragraph {
+                        padding: 2rem 0rem;
+                    }
+                }
+            }
+            .right-award {
+                width: 30%;
+                .awards-image-container {
+                    width: 20rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 5px var(--bg-main);
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:768px){
+        .awards-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            & h3 {
+                font-size: 2.5rem;
+                color: var(--bg-main);
+            }
+        }
+        .flex-container {
+            flex-direction: column;
+            gap: 4rem;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            .left-award {
+                width: 100%;
+                ul {
+                    
+                    & li {
+                        color: #bbf7d0;
+                        & p {
+                            color: var(--bg-main)
+                        }
+                    }
+                    .second-paragraph {
+                        padding: .5rem 0rem;
+                    }
+                }
+            }
+            .right-award {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .awards-image-container {
+                    width: 20rem;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px var(--bg-main);
+                    overflow: hidden;
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

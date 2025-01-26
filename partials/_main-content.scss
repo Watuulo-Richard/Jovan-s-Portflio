@@ -1,10 +1,11 @@
 .main-content {
-    width: 75%;
+    width: 90%;
     padding: 2rem;
     flex: 1;
     padding-left: 7%;
     transition: all .4s ease;
-    background-color: var(--bg-black-50);
+    background-color: var(--bg-black-900);
+    overflow: hidden;
     .home-section {
         .row-for-home-section {
                 display: flex;
@@ -38,23 +39,24 @@
                     color: var(--text-black-700);
                 }
 
-                .more-info {
+                .more-info-container {
                     width: 100%;
-                    margin: 0 auto;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    padding: 1rem 2rem;
-                    border-radius: 2rem;
-                    border: none;
-                    background: var(--skin-color);
-                    color: var(--bg-black-100);
-                    transition: all 0.3s ease-in-out;
-                    & i {
-                        padding: 0rem .5rem;
+                    .more-info {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        padding: 1rem 2rem;
+                        border-radius: 2rem;
+                        border: none;
+                        background: var(--skin-color);
+                        color: var(--bg-black-100);
+                        transition: all 0.3s ease-in-out;
+                        & i {
+                            padding: 0rem .5rem;
+                        }
                     }
-                }
-                .more-info:hover {
-                    transform: translateY(-5px);
+                    .more-info:hover {
+                        transform: translateY(-5px);
+                    }
                 }
                 
             }
@@ -62,7 +64,10 @@
                 width: 50%;
                 padding: 0rem 2rem;
                 position: relative;
-                
+                // background: linear-gradient(to right,#545454,black,   #a6a6a6, #ffffff,#737373,);
+                background-blend-mode: multiply;
+                background-repeat: no-repeat;
+                background-position: center center;
                 & img {
                     height: 500px;
                     width: 100%;
@@ -254,7 +259,6 @@
                 order: 2;
                 .more-info {
                     width: 100%;
-                    margin: 0 auto;
                     font-size: 1rem;
                     font-weight: 500;
                     padding: 1rem 2rem;

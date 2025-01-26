@@ -10,10 +10,12 @@
             padding: 3rem 0rem;
             & h2 {
                 font-size: 2.5rem;
+                color: var(--bg-main);
             }
 
             & p {
                 font-size: 1rem;
+                color: var(--bg-main);
             }
         }
         .likes-list {
@@ -22,7 +24,7 @@
             gap: 1rem;
             .like-item {
                 width: 100%;
-                border: var(--skin-color) solid 1px;
+                border: var(--bg-main) solid 1px;
                 border-radius: .5rem;
                 display: flex;
                 flex-direction: column;
@@ -34,17 +36,18 @@
                .like-icon-container {
                 width: 60px;
                 height: 60px;
-                border: var(--skin-color) solid .01rem;
+                border: var(--bg-main) solid .01rem;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 & i {
-                   font-size: 2rem; 
+                   font-size: 2rem;
+                   color: var(--bg-main);
                 }
                }
                .like-text {
-
+                    color: var(--bg-main);
                } 
             }
         }
