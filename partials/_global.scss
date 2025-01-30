@@ -36,6 +36,7 @@ body {
     .container {
         display: flex;
         position: relative;
+        
         @media (max-width: 495px) {  
             width: 100%;
         }

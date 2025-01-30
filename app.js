@@ -1,9 +1,20 @@
 const descriptions = document.querySelectorAll(".description")
 const servicesContainer = document.querySelector(".services-items")
 const paragraphs = document.querySelectorAll(".service-item p")
-// console.log(paragraphs)
 const downloadButtonElement = document.getElementById("download-resume")
 const activeLink = document.querySelector(".link-active")
+
+const loaderContainer = document.querySelector(".loaderContainer")
+function showLoader(){
+  setInterval(() => {
+    if(loaderContainer){
+      loaderContainer.style.display = "none"
+    }
+  }, 3000);
+}
+showLoader()
+
+
 
 document.addEventListener('DOMContentLoaded', ()=>{
     activeLink.classList.add('link-active')
@@ -219,4 +230,4 @@ function userScroll(){
 document.addEventListener('DOMContentLoaded', userScroll)
 
 
-
+ 
