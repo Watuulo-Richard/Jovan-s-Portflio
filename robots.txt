@@ -1,0 +1,5 @@
+User-agent: *
+allow:/
+Disallow:/private
+
+Sitemap: https://lubega-jovan.netlify.app/sitemap.xml
